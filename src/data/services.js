@@ -1,5 +1,3 @@
-
-
 const servicesDB = [
     {
       id: 1,

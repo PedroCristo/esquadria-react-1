@@ -1,5 +1,6 @@
 
 function Footer() {
+    const currentYear = new Date().getFullYear(); // Get the current year
     return(
         <section id="footer">
         <div className="container">
@@ -34,7 +35,7 @@ function Footer() {
                 </div>
                 <hr />
                 <p className="copyright"><i className="far fa-copyright"></i>Copyright | <span
-                        className="esquadria">esquadria</span> | 2022 - <span id="output_3"></span><br />
+                        className="esquadria">esquadria</span> | 2022 - <span>{currentYear}</span><br />
                     <a href="cookies.html">Política de Cookies</a>
                 </p>
             </div>
