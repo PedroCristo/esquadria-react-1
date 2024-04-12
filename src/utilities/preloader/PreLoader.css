@@ -1,6 +1,6 @@
 /* PRELOADER */
 .preloader {
-    background: #fff url(../../../public/images/gif/esquadria-preloader-2.gif);
+    background: #fff url(/images/gif/esquadria-preloader-2.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;

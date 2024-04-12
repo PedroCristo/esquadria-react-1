@@ -1,6 +1,5 @@
-import "./Cookies.css"
-
 import React, { useState, useEffect } from 'react';
+import "./Cookies.css"
 
 function Cookies() {
   const [showCookies, setShowCookies] = useState(true);
