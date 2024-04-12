@@ -43,7 +43,7 @@ function Navbar() {
                         <li><a href="#services" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Serviços</a></li>
                         <li><a href="#gallery" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Galeria</a></li>
                         <li><a href="#contact" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Contacto</a></li>
-                        <li><a href="index.html" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Intro</a></li>
+                        <li><a href="/" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Intro</a></li>
                     </ul>
                 </div>
             </nav>
