@@ -1,7 +1,7 @@
 
 import PropTypes from "prop-types";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "../../components/layout/Navbar";
+import Footer from "../../components/layout/Footer";
 
 function Layout( {children}) {
     return(
