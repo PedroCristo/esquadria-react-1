@@ -83,19 +83,19 @@ function LandingPage() {
         </div> */}
         <ul>
           <li>
-            <a href="home.html">Home</a>
+            <a href="mainPage">Home</a>
           </li>
           <li>
-            <a href="home.html#about">Quem Somos</a>
+            <a href="mainPage#about">Quem Somos</a>
           </li>
           <li>
-            <a href="home.html#services">Serviços</a>
+            <a href="mainPage#services">Serviços</a>
           </li>
           <li>
-            <a href="home.html#gallery">Galeria</a>
+            <a href="mainPage#gallery">Galeria</a>
           </li>
           <li>
-            <a href="home.html#contact">Contacto</a>
+            <a href="mainPage#contact">Contacto</a>
           </li>
           <li>
             <img
