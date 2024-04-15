@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import PropTypes from "prop-types";
 
-function Navbar() {
+function Navbar( {showFullMenu} ) {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -39,17 +40,29 @@ function Navbar() {
             <nav className={`navigation ${isMenuOpen ? 'active' : ''}`} id="navigation">
                 <div className="navigation-items">
                     <ul>
-                        <li><a href="#top" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Início</a></li>
-                        <li><a href="#about" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Quem Somos</a></li>
-                        <li><a href="#services" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Serviços</a></li>
-                        <li><a href="#gallery" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Galeria</a></li>
-                        <li><a href="#contact" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Contacto</a></li>
-                        <li><a href="/" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Intro</a></li>
+                        {showFullMenu ? (
+                            <>
+                                <li><Link to="top" spy={true} smooth={true} offset={50} duration={500} className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Início</Link></li>
+                                <li><Link to="about" spy={true} smooth={true} offset={50} duration={500} className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Quem Somos</Link></li>
+                                <li><Link to="services" spy={true} smooth={true} offset={50} duration={500} className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Serviços</Link></li>
+                                <li><Link to="contact" spy={true} smooth={true} offset={50} duration={500} className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Contacto</Link></li>
+                                <li><a href="/" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Intro</a></li>
+                            </>
+                        ) : (
+                            <>
+                                <li><a href="/página-principal" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Início</a></li>
+                                <li><a href="/" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Intro</a></li>
+                            </>
+                        )}
                     </ul>
                 </div>
             </nav>
         </header>
     );
 }
+
+Navbar.propTypes = {
+    showFullMenu: PropTypes.string.isRequired,
+  };
 
 export default Navbar;

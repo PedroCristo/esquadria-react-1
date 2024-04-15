@@ -4,8 +4,6 @@ import heroSlides from '../data/heroSlides';
 function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-
-
   function nextSlide() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % heroSlides.length);
   }

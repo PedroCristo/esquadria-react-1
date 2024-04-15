@@ -150,7 +150,7 @@ video {
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 400px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -171,7 +171,7 @@ video {
     width: 150px;
     border: 3px solid transparent;
     padding: 5px 10px;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 500;
     text-decoration: none;
     margin-left: 30px;
@@ -198,7 +198,7 @@ video {
 }
 
 #showcase.active {
-    right: 300px;
+    right: 400px;
 }
 
 .fa-times.active {

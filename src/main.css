@@ -36,18 +36,6 @@ body::-webkit-scrollbar {
   /* display: none; */
 }
 
-/* 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #111;
-  opacity: 1;
-  z-index: 1000;
-} */
-
 .img-title {
   width: 50px;
   margin-left: auto;
@@ -62,9 +50,13 @@ body::-webkit-scrollbar {
   font-weight: bold;
 }
 
+.nav-link {
+  cursor: pointer !important;
+}
+
 /* HEADER */
 .header {
-  z-index: 999;
+  z-index: 10000;
   position: fixed;
   top: 0;
   left: 0;
@@ -87,7 +79,8 @@ body::-webkit-scrollbar {
 }
 
 .menu-btn .fa-bars,
-.menu-btn .fa-times {
+.menu-btn .fa-times
+ {
   display: none !important;
   font-size: 30px;
   cursor: pointer;
@@ -144,12 +137,10 @@ body::-webkit-scrollbar {
   width: 120px;
 }
 
-.home {
-  padding: 100px 200px;
-  position: relative;
-}
+/* HERO SECTION */
 
 .home {
+  padding: 100px 200px;
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -159,20 +150,31 @@ body::-webkit-scrollbar {
   background: var(--esquadria-green);
 }
 
-/* .home:before {
-  z-index: 777;
+.home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  opacity: 0.5;
+  z-index: 1;
+} 
+
+.home:before {
+  /* z-index: 1000; */
   content: '';
   position: absolute;
-  background: #111;
+  /* background: #111; */
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   opacity: 0.6;
-} */
+}
 
 .home .content {
-  z-index: 888;
+  z-index: 2;
   color: #fff;
   width: 70%;
   margin-top: 50px;

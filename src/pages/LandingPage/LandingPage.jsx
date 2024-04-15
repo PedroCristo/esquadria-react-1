@@ -12,13 +12,13 @@ function LandingPage() {
     <div>
       <section id="showcase" className={`showcase ${isActive ? "active" : ""}`}>
         <div className="header">
-          <a href="home.html">
+          <Link to="/página-principal">
             <img
               src="images/esquadria_logos_restaurados/esquadria-logo_1.png"
               className="logo"
               alt="Esquadria Logo"
             />
-          </a>
+          </Link>
           <div className="toggler" onClick={toggleMenu}>
             {isActive ? (
               <i className={`fa fa-times ${isActive ? "active" : ""}`}></i>
@@ -78,24 +78,21 @@ function LandingPage() {
         </div>
       </section>
       <nav className={`menu ${isActive ? "active" : ""}`}>
-      <div className="toggler-2" onClick={toggleMenu}>
-        <i className="fa fa-times fa-times-2"></i>
-      </div>
+        <div className="toggler-2" onClick={toggleMenu}>
+          <i className="fa fa-times fa-times-2"></i>
+        </div>
         <ul>
           <li>
-            <a href="mainPage">Home</a>
+            <Link to="/página-principal">Início</Link>
           </li>
           <li>
-            <a href="mainPage#about">Quem Somos</a>
+            <Link to="/página-principal">Quem Somos</Link>
           </li>
           <li>
-            <a href="mainPage#services">Serviços</a>
+            <Link to="/política-privacidade">Política de Privacidade</Link>
           </li>
           <li>
-            <a href="mainPage#gallery">Galeria</a>
-          </li>
-          <li>
-            <a href="mainPage#contact">Contacto</a>
+            <Link to="/política-cookies">Política de Cookies</Link>
           </li>
           <li>
             <img

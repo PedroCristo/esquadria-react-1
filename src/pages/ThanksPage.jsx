@@ -9,7 +9,7 @@ function ThanksPage(){
             <p>Obrigado pelo o seu e-mail. <br />
                 Entraremos em contacto o mais breve possível.
             </p>
-            <Link to="/página-principal" className="btn">Voltar</Link>
+            <Link to="/página-principal" className="btn nav-link">Voltar</Link>
         </div>
     </section>
     )

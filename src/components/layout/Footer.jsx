@@ -35,9 +35,8 @@ function Footer() {
                 </div>
                 <hr />
                 <p className="copyright"><i className="far fa-copyright"></i>Copyright | <span
-                        className="esquadria">esquadria</span> | 2022 - <span>{currentYear}</span><br />
-                    <Link to="/política-privacidade">Política de Privacidade</Link><br />
-                    <Link to="/política-cookies">Política de Cookies</Link>
+                    className="esquadria">esquadria</span> | 2022 - <span>{currentYear}</span><br />
+                    <Link to="/política-privacidade">Política de Privacidade</Link> | <Link to="/política-cookies">Política de Cookies</Link>
                 </p>
             </div>
         </div>
