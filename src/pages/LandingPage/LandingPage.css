@@ -283,10 +283,10 @@ video {
     }
 
     .social {
-        left: 50%;
         bottom: 10%;
-        margin-left: -55px;
-        width: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 170px;
         height: 100px;
     }
 
@@ -316,7 +316,7 @@ video {
         display: block;
         position: absolute;
         right: 35px;
-        top: 55px;
+        top: 30px;
     }
 }
 

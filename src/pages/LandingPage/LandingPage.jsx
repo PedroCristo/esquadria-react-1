@@ -78,9 +78,9 @@ function LandingPage() {
         </div>
       </section>
       <nav className={`menu ${isActive ? "active" : ""}`}>
-        {/* <div className="toggler-2">
-          <i className="fa fa-times fa-times-2"></i>
-        </div> */}
+      <div className="toggler-2" onClick={toggleMenu}>
+        <i className="fa fa-times fa-times-2"></i>
+      </div>
         <ul>
           <li>
             <a href="mainPage">Home</a>
