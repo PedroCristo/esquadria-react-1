@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -26,9 +27,9 @@ function Navbar() {
 
     return (
         <header className={`header ${isScrolled ? 'active' : ''}`}>
-            <a href="home.html">
+            <Link to="/página-principal">
                 <img src="images/esquadria_logos_restaurados/esquadria-logo_1.png" className={`logo ${isScrolled ? 'active' : ''}`} alt="Esquadria Logo" />
-            </a>
+            </Link>
 
             <div className="menu-btn" onClick={toggleMenu}>
                 <i className={`fa fa-bars ${isMenuOpen ? 'active' : 'fa-bars'} ${isScrolled ? 'fa-active' : ''}`}></i>
@@ -38,7 +39,7 @@ function Navbar() {
             <nav className={`navigation ${isMenuOpen ? 'active' : ''}`} id="navigation">
                 <div className="navigation-items">
                     <ul>
-                        <li><a href="#top" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Home</a></li>
+                        <li><a href="#top" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Início</a></li>
                         <li><a href="#about" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Quem Somos</a></li>
                         <li><a href="#services" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Serviços</a></li>
                         <li><a href="#gallery" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Galeria</a></li>

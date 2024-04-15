@@ -35,6 +35,7 @@ body {
 body::-webkit-scrollbar {
   /* display: none; */
 }
+
 /* 
 .overlay {
   position: absolute;
@@ -109,7 +110,7 @@ body::-webkit-scrollbar {
 
 .header .navigation .navigation-items ul li a {
   position: relative;
-  color: #fff;
+  color: #797676;
   font-size: 1em;
   font-weight: 500;
   text-decoration: none;
@@ -810,6 +811,17 @@ body::-webkit-scrollbar {
   margin-bottom: 40px;
 }
 
+.contact-col div:nth-child(5) {
+  display: initial;
+}
+.contact-col div:nth-child(6) {
+ margin-top: 15px;
+}
+
+.contact-col .schedule {
+ margin-left: 65px;
+}
+
 .contact-col div .fas {
   font-size: 25px;
   color: var(--esquadria-green);
@@ -895,7 +907,7 @@ body::-webkit-scrollbar {
   margin-top: -15px;
   margin-right: 25px;
   text-align: left;
-  width: 85%;
+  width: 75%;
 }
 
 #footer h4 {
@@ -907,7 +919,7 @@ body::-webkit-scrollbar {
 #footer p {
   font-size: 12px;
   text-align: left;
-  padding-right: 35px;
+  /* padding-right: 35px; */
 }
 
 #footer .contact-span {
@@ -1025,8 +1037,11 @@ body::-webkit-scrollbar {
 
 /* COOKIES PAGE */
 .cookies {
-  padding: 50px;
-  margin: 100px 0;
+  margin: 10px 0;
+}
+
+.container-title {
+  margin-bottom: 150px;
 }
 
 .cookies p {
@@ -1039,7 +1054,8 @@ body::-webkit-scrollbar {
 }
 
 .cookies .container {
-  padding: 25px 100px;
+  padding: 15px 100px;
+  max-width: 85%;
 }
 
 .container-title h1 {
@@ -1054,11 +1070,26 @@ body::-webkit-scrollbar {
 
 .cookies h2 {
   font-size: 2rem;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .cookies p {
   font-size: 1rem;
+}
+
+.container h2 {
+  font-size: 1.6rem;
+}
+
+.container h3 {
+  font-size: 1.4rem;
+}
+
+.privacy-policy h2 {
+  margin-top: 35px;
+}
+.privacy-policy h3 {
+  margin-top: 45px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1068,6 +1099,12 @@ body::-webkit-scrollbar {
 
   .cookies .container {
     padding: 25px 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cookies .container {
+    max-width: 100%;
   }
 }
 

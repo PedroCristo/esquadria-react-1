@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 function Footer() {
     const currentYear = new Date().getFullYear(); // Get the current year
     return(
@@ -36,7 +36,8 @@ function Footer() {
                 <hr />
                 <p className="copyright"><i className="far fa-copyright"></i>Copyright | <span
                         className="esquadria">esquadria</span> | 2022 - <span>{currentYear}</span><br />
-                    <a href="cookies.html">Política de Cookies</a>
+                    <Link to="/política-privacidade">Política de Privacidade</Link><br />
+                    <Link to="/política-cookies">Política de Cookies</Link>
                 </p>
             </div>
         </div>

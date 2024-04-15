@@ -41,9 +41,9 @@ function ContactSection() {
           <div>
             <i className="fas fa-clock"></i>
             {/* Render the schedule message */}
-            <span>Das 9.30H às 18.30H</span><br /> 
-            <span style={{ color: schedule.color }}>
-                {schedule.message}</span><br />
+            <span>Das 9.30H às 18.30H</span><br/>
+            <span className="schedule" style={{ color: schedule.color }}>
+                {schedule.message}</span>
           </div>
           <div>
             <i className="fas fa-envelope"></i>
