@@ -1003,7 +1003,7 @@ body::-webkit-scrollbar {
 /* THANKS PAGE */
 .thanks-page {
   background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
-    url(../images/esquadria-thanks-bg.gif);
+    url(../images/desktop/extra/esquadria-thanks-bg.gif);
   background-position: center;
   background-size: cover;
 }

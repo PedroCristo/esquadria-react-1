@@ -49,7 +49,7 @@ function LandingPage() {
             Na Esquadria ajudamo-lo a criar o seu espaço para levar os seus
             amigos, jantar e socializar.
           </p>
-          <Link to="/mainPage" className="btn">
+          <Link to="/página-principal" className="btn">
             Explorar
           </Link>
         </div>
