@@ -1,6 +1,6 @@
 function AboutSection() {
   return (
-    <section className="about-us" id="about">
+    <section id="about" className="about-us">
       <h1 className="title">Quem Somos</h1>
       <img
         src="images/logos/esquadria_logo.png"

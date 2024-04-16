@@ -385,17 +385,29 @@ body::-webkit-scrollbar {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 14%;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
+  position: relative; /* Add this line */
 }
 
 #banner .banner-highlights {
-  padding: 70px 0;
   background: center rgba(0, 0, 0, 0.7);
   text-align: center;
   color: #fff;
-  margin-top: 75px;
+  width: 100%;
+  padding: 50px;
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
 }
+
+#banner .col-md-4 {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
 
 #banner h2 {
   margin-bottom: 25px;

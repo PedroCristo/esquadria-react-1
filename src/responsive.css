@@ -193,9 +193,14 @@
     }
 }
 
-@media only screen and (max-width: 770px) {
-    .services .row {
-        flex-direction: row-reverse;
+@media only screen and (max-width: 1000px) {
+    #services .row {
+        flex-direction: column !important;
+    }
+
+    #services .row .col-md-4 {
+        width: 90%;
+        margin: 15px auto;
     }
 }
 
@@ -279,217 +284,217 @@
 
 @media only screen and (max-width: 1000px) {
     .cookies {
-      padding: 25px;
+        padding: 25px;
     }
-  
+
     .cookies .container {
-      padding: 25px 60px;
+        padding: 25px 60px;
     }
-  }
-  
-  @media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 768px) {
     .cookies .container {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  @media only screen and (max-width: 500px) {
+}
+
+@media only screen and (max-width: 500px) {
     .cookies {
-      padding: 10px;
-      text-align: center;
+        padding: 10px;
+        text-align: center;
     }
-  
+
     .cookies p {
-      text-align: justify;
-      font-size: 11px;
+        text-align: justify;
+        font-size: 11px;
     }
-  
+
     .container-title h1 {
-      font-size: 1.6rem;
+        font-size: 1.6rem;
     }
-  
+
     .cookies h2 {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-  
+
     .cookies .container {
-      padding: 15px;
+        padding: 15px;
     }
-  }
-  
-  @media only screen and (max-width: 650px) {
+}
+
+@media only screen and (max-width: 650px) {
     .thanks-page p {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  
+
     .thanks-page {
-      background-position: 55% center;
+        background-position: 55% center;
     }
-  }
-  
-  @media only screen and (max-width: 500px) {
+}
+
+@media only screen and (max-width: 500px) {
     .thanks-page p {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-  }
-  
-  /* MEDIA QUERIES LAND SCAPE MODE */
-  /* BLACK BERRY Z30*/
-  @media only screen and (max-height: 366px) and (max-width: 650px) {
+}
+
+/* MEDIA QUERIES LAND SCAPE MODE */
+/* BLACK BERRY Z30*/
+@media only screen and (max-height: 366px) and (max-width: 650px) {
     .home .content {
-      margin-top: 15px;
+        margin-top: 15px;
     }
-  
+
     .home .content h2 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .home .media-icons {
-      margin-top: -35px;
+        margin-top: -35px;
     }
-  
+
     .title {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     #banner .banner-highlights {
-      margin-top: -70px !important;
-      padding: 50px 0;
+        margin-top: -70px !important;
+        padding: 50px 0;
     }
-  }
-  
-  @media only screen and (max-height: 480px) and (max-width: 800px) {}
-  
-  /* PIXEL 2 XL */
-  @media only screen and (max-height: 421px) and (max-width: 823px) {
+}
+
+@media only screen and (max-height: 480px) and (max-width: 800px) {}
+
+/* PIXEL 2 XL */
+@media only screen and (max-height: 421px) and (max-width: 823px) {
     .title {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     #banner .banner-highlights {
-      margin-top: -70px !important;
-      padding: 50px 0;
+        margin-top: -70px !important;
+        padding: 50px 0;
     }
-  }
-  
-  /* PIXEL 2 */
-  @media only screen and (max-height: 411px) and (max-width: 731px) {}
-  
-  /* iPhone 6/7/8 PLUS */
-  @media only screen and (max-height: 436px) and (max-width: 736px) {}
-  
-  /* SURFACE DUO */
-  @media only screen and (max-height: 542px) and (max-width: 721px) {
+}
+
+/* PIXEL 2 */
+@media only screen and (max-height: 411px) and (max-width: 731px) {}
+
+/* iPhone 6/7/8 PLUS */
+@media only screen and (max-height: 436px) and (max-width: 736px) {}
+
+/* SURFACE DUO */
+@media only screen and (max-height: 542px) and (max-width: 721px) {
     #banner .banner-highlights {
-      margin-top: 10px !important;
-      padding: 30px 0;
+        margin-top: 10px !important;
+        padding: 30px 0;
     }
-  }
-  
-  /* iPhone  X*/
-  @media only screen and (max-height: 375px) and (max-width: 1000px) {
+}
+
+/* iPhone  X*/
+@media only screen and (max-height: 375px) and (max-width: 1000px) {
     .home .content {
-      margin-top: -20px;
+        margin-top: -20px;
     }
-  
+
     .home .content {
-      margin-top: 15px;
+        margin-top: 15px;
     }
-  
+
     .home .content h2 {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
-  
+
     .home .content h3 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .home .content p {
-      font-size: 1.1rem;
+        font-size: 1.1rem;
     }
-  
+
     .title {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     .home .media-icons {
-      margin-top: -135px;
+        margin-top: -135px;
     }
-  
+
     #banner .banner-highlights {
-      margin-top: -60px !important;
-      padding: 30px 0;
+        margin-top: -60px !important;
+        padding: 30px 0;
     }
-  }
-  
-  /* iPhone  6/7/8*/
-  @media only screen and (max-height: 375px) and (max-width: 667px) {
+}
+
+/* iPhone  6/7/8*/
+@media only screen and (max-height: 375px) and (max-width: 667px) {
     .home .content {
-      margin-top: -20px;
+        margin-top: -20px;
     }
-  
+
     .home .content {
-      margin-top: 15px;
+        margin-top: 15px;
     }
-  
+
     .home .content h2 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .home .content h3 {
-      font-size: 1.3rem;
+        font-size: 1.3rem;
     }
-  
+
     .home .content p {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-  
+
     .title {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     .home .media-icons {
-      margin-top: -135px;
+        margin-top: -135px;
     }
-  
+
     #banner .banner-highlights {
-      margin-top: -60px !important;
-      padding: 30px 0;
+        margin-top: -60px !important;
+        padding: 30px 0;
     }
-  }
-  
-  /* iPhone 5/SE */
-  @media only screen and (max-height: 321px) and (max-width: 570px) {
+}
+
+/* iPhone 5/SE */
+@media only screen and (max-height: 321px) and (max-width: 570px) {
     .home .content {
-      margin-top: -20px;
+        margin-top: -20px;
     }
-  
+
     .home .content {
-      margin-top: 15px;
+        margin-top: 15px;
     }
-  
+
     .home .content h2 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .home .content h3 {
-      font-size: 1.3rem;
+        font-size: 1.3rem;
     }
-  
+
     .home .content p {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-  
+
     .title {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     .home .media-icons {
-      margin-top: -135px;
+        margin-top: -135px;
     }
-  
+
     #banner .banner-highlights {
-      margin-top: -60px !important;
-      padding: 30px 0;
+        margin-top: -60px !important;
+        padding: 30px 0;
     }
-  }
+}

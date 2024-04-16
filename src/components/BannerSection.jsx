@@ -1,6 +1,6 @@
 function BannerSection() {
   return (
-    <section id="banner">
+    <section id="banner" className="banner">
       <div className="banner-highlights">
         <div className="container">
           <div className="row">
