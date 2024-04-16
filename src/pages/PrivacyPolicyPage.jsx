@@ -1,6 +1,10 @@
 import privacyPolicyDB from "../data/privacy_policy";
+import { useEffect } from "react";
 
 function PrivacyPolicyPage() {
+  useEffect(() => {
+    document.title = "Esquadria | Política de Privacidade";
+  }, []);
   return (
     <div id="cookies" className="cookies privacy-policy">
       <div className="container-title">

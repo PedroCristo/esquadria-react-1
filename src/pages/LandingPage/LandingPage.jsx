@@ -14,7 +14,7 @@ function LandingPage() {
         <div className="header">
           <Link to="/página-principal">
             <img
-              src="images/esquadria_logos_restaurados/esquadria-logo_1.png"
+              src="images/logos/esquadria-logo_1.png"
               className="logo"
               alt="Esquadria Logo"
             />
@@ -96,7 +96,7 @@ function LandingPage() {
           </li>
           <li>
             <img
-              src="images/esquadria_logos_restaurados/esquadria-logo_1.png"
+              src="images/logos/esquadria-logo_1.png"
               className="logo"
               alt="Esquadria Logo"
             />

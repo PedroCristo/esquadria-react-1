@@ -29,7 +29,7 @@ function Navbar( {showFullMenu} ) {
     return (
         <header className={`header ${isScrolled ? 'active' : ''}`}>
             <Link to="/página-principal">
-                <img src="images/esquadria_logos_restaurados/esquadria-logo_1.png" className={`logo ${isScrolled ? 'active' : ''}`} alt="Esquadria Logo" />
+                <img src="images/logos/esquadria-logo_1.png" className={`logo ${isScrolled ? 'active' : ''}`} alt="Esquadria Logo" />
             </Link>
 
             <div className="menu-btn" onClick={toggleMenu}>

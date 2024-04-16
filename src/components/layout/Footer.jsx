@@ -6,7 +6,7 @@ function Footer() {
         <div className="container">
             <div className="row">
                 <div className="col-md-3">
-                    <img src="images/esquadria_logos_restaurados/esquadria-logo_1.png" className="footer-logo"
+                    <img src="images/logos/esquadria-logo_1.png" className="footer-logo"
                         alt="Esquadria Logo" />
                     <p className="text-footer">A cozinha é o coração de cada casa.
                         Evoca memórias da história da sua família.</p>

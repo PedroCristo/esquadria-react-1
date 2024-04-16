@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function ThanksPage(){
+    useEffect(() => {
+        document.title = "Esquadria | Página de Agradeciemnto";
+      }, []);
     return(
         <section className="home thanks-page">
         <div className="content active">

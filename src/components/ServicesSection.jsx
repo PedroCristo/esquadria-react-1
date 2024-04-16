@@ -6,7 +6,7 @@ function ServicesSection() {
     <section id="services">
       <h1 className="title">Serviços</h1>
       <img
-        src="images/esquadria_logos_restaurados/esquadria_logo.png"
+        src="images/logos/esquadria_logo.png"
         className="img-title"
         alt="Esquadria Logo"
       />

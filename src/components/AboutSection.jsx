@@ -3,7 +3,7 @@ function AboutSection() {
     <section className="about-us" id="about">
       <h1 className="title">Quem Somos</h1>
       <img
-        src="images/esquadria_logos_restaurados/esquadria_logo.png"
+        src="images/logos/esquadria_logo.png"
         className="img-title"
         alt="Esquadria Logo"
       />

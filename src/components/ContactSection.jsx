@@ -10,7 +10,7 @@ function ContactSection() {
     <section className="contact-us">
       <h1 className="title">Contacto</h1>
       <img
-        src="images/esquadria_logos_restaurados/esquadria_logo.png"
+        src="images/logos/esquadria_logo.png"
         className="img-title"
         alt="Esquadria Logo"
       />

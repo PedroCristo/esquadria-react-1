@@ -5,7 +5,7 @@ function GallerySection() {
   return (
     <section id="gallery" className="gallery">
       <h1 className="title">Galeria</h1>
-      <img src="images/esquadria_logos_restaurados/esquadria_logo.png" className="img-title" alt="Esquadria Logo" />
+      <img src="images/logos/esquadria_logo.png" className="img-title" alt="Esquadria Logo" />
       <div className="container-fluid">
         <div className="row mt-4">
           {galleryDB.map((item) => (
