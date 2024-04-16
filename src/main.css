@@ -790,10 +790,10 @@ body::-webkit-scrollbar {
   font-size: 1.4rem;
 }
 
-.privacy-policy h2 {
-  margin-top: 35px;
+.privacy-policy h3 {
+  margin-top: 20px;
 }
 
-.privacy-policy h3 {
-  margin-top: 45px;
+.privacy-policy p {
+  margin-top: -50px;
 }
