@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import PropTypes from "prop-types";
 
 function Navbar( {showFullMenu} ) {
@@ -28,9 +29,9 @@ function Navbar( {showFullMenu} ) {
 
     return (
         <header className={`header ${isScrolled ? 'active' : ''}`}>
-            <Link to="/página-principal">
+            <RouterLink to="/página-principal">
                 <img src="images/logos/esquadria-logo_1.png" className={`logo ${isScrolled ? 'active' : ''}`} alt="Esquadria Logo" />
-            </Link>
+            </RouterLink>
 
             <div className="menu-btn" onClick={toggleMenu}>
                 <i className={`fa fa-bars ${isMenuOpen ? 'active' : 'fa-bars'} ${isScrolled ? 'fa-active' : ''}`}></i>
@@ -50,8 +51,8 @@ function Navbar( {showFullMenu} ) {
                             </>
                         ) : (
                             <>
-                                <li><a href="/página-principal" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Início</a></li>
-                                <li><a href="/" className={`nav-link ${isScrolled ? 'active' : ''}`} onClick={toggleMenu}>Intro</a></li>
+                                <li><RouterLink to="/página-principal" className={`nav-link ${isScrolled ? 'active' : ''} ${showFullMenu ? '' : 'color-dark'}`} onClick={toggleMenu}>Início</RouterLink></li>
+                                <li><RouterLink to="/" className={`nav-link ${isScrolled ? 'active' : ''} ${showFullMenu ? '' : 'color-dark'}`} onClick={toggleMenu}>Intro</RouterLink></li>
                             </>
                         )}
                     </ul>

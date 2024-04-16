@@ -89,10 +89,10 @@ function LandingPage() {
             <Link to="/página-principal">Quem Somos</Link>
           </li>
           <li>
-            <Link to="/política-privacidade">Política de Privacidade</Link>
+            <Link to="/política-cookies">Política de Cookies</Link>
           </li>
           <li>
-            <Link to="/política-cookies">Política de Cookies</Link>
+            <Link to="/política-privacidade">Política de Privacidade</Link>
           </li>
           <li>
             <img
