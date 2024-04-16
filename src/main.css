@@ -79,8 +79,7 @@ body::-webkit-scrollbar {
 }
 
 .menu-btn .fa-bars,
-.menu-btn .fa-times
- {
+.menu-btn .fa-times {
   display: none !important;
   font-size: 30px;
   cursor: pointer;
@@ -138,7 +137,6 @@ body::-webkit-scrollbar {
 }
 
 /* HERO SECTION */
-
 .home {
   padding: 100px 200px;
   position: relative;
@@ -159,7 +157,7 @@ body::-webkit-scrollbar {
   background-color: #111;
   opacity: 0.5;
   z-index: 1;
-} 
+}
 
 .home:before {
   /* z-index: 1000; */
@@ -315,24 +313,6 @@ body::-webkit-scrollbar {
   }
 }
 
-@keyframes pulseAnimation2 {
-  10% {
-    opacity: 0;
-  }
-
-  20% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
 .slider-navigation .nav-btn {
   width: 12px;
   height: 12px;
@@ -367,181 +347,6 @@ body::-webkit-scrollbar {
   transition-property: clip-path;
 }
 
-@media only screen and (min-width:1368px) {
-  .home p {
-    font-size: 1.5rem;
-  }
-
-  #services .user-services {
-    height: 550px;
-  }
-
-}
-
-@media only screen and (max-width: 1040px) {
-  header {
-    padding: 12px 20px;
-  }
-
-  .header .logo {
-    position: absolute;
-    left: 50px;
-    margin-top: -20px;
-  }
-
-  .home {
-    padding: 100px 20px;
-  }
-
-  .home .media-icons {
-    right: 15px;
-  }
-
-  header .navigation {
-    display: none;
-  }
-
-  header .navigation.active {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(1, 1, 1, 0.5);
-    z-index: -1;
-  }
-
-  header .navigation .navigation-items ul li {
-    margin-bottom: 8px !important;
-
-    width: 150px;
-    text-align: center;
-    padding: 8px 0;
-  }
-
-  .header .navigation .navigation-items ul li a {
-    color: var(--esquadria-green) !important;
-  }
-
-  header .navigation .navigation-items a:before {
-    background: #222;
-    height: 5px;
-  }
-
-  header .navigation.active .navigation-items ul {
-    background: #fff;
-    width: 600px;
-    max-width: 600px;
-    margin: 20px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-  }
-
-  /*.menu-btn {
-    background: url('../images/cozinha-1.jpg') no-repeat;
-    background-size: 30px;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-
-  .menu-btn.active {
-    z-index: 999;
-    background: url(../images/esq-logo.png) no-repeat;
-    background-size: 25px;
-    background-position: center;
-    transition: 0.3s ease;
-  }*/
-
-  .menu-btn .fa-bars {
-    display: block !important;
-  }
-
-  .menu-btn .fa-bars.active {
-    display: none !important;
-  }
-
-  .menu-btn .fa-times.active {
-    display: block !important;
-  }
-
-  .menu-btn .fa-times.fa-active,
-  .menu-btn .fa-bars.fa-active {
-    color: var(--font-dark);
-  }
-}
-
-@media only screen and (max-width: 560px) {
-  .home:before {
-    opacity: 0.4;
-  }
-
-  .home .content h2 {
-    font-size: 2em;
-    line-height: 60px;
-  }
-
-  .header .logo {
-    left: 5px;
-  }
-
-  header .logo {
-    width: 90px;
-    margin-top: 25px;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .home .content h2 {
-    font-size: 1.5em;
-    line-height: 60px;
-  }
-
-  .home .content h3 {
-    font-size: 2em;
-    line-height: 60px;
-  }
-}
-
-@media only screen and (max-width: 386px) {
-  #footer .container .copyright {
-    font-size: 0.7rem;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  header .logo {
-    width: 80px;
-    margin-top: 25px;
-  }
-
-  .home .content {
-    margin-top: -10px;
-  }
-
-  .home .content h2 {
-    font-size: 1.3em;
-    margin: 15px 0 -15px;
-  }
-
-  .home .content h3 {
-    font-size: 1.1em;
-    margin-bottom: -15px;
-  }
-
-  .home .content .btn {
-    font-size: 0.8em;
-  }
-}
 
 /* ABOUT-US SECTION */
 .about-us {
@@ -570,46 +375,6 @@ body::-webkit-scrollbar {
 .about-us-col p {
   padding: 15px 0px 25px;
   width: 95%;
-}
-
-/* MEDIA QUERIES ABOUT-US*/
-@media only screen and (max-width: 900px) and (min-width: 800px) {
-  .about-us-col img {
-    margin-top: 100px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .about-us .row {
-    flex-direction: column !important;
-  }
-
-  .about-us .row-reverse {
-    flex-direction: column-reverse !important;
-  }
-
-  .about-us-col img {
-    height: initial;
-    padding-right: 0px;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .about-us {
-    text-align: center;
-  }
-
-  .about-us-col h1 {
-    font-size: 1.3rem;
-  }
-
-  .title {
-    font-size: 2.2rem;
-  }
 }
 
 /* BANNER SECTION */
@@ -642,13 +407,6 @@ body::-webkit-scrollbar {
 
 #banner .fa-phone {
   margin-right: 10px;
-}
-
-/* MEDIA QUERIES BANNER */
-@media only screen and (max-width: 800px) {
-  #banner .banner-highlights {
-    margin-top: 180px !important;
-  }
 }
 
 /* SERVICES */
@@ -705,19 +463,6 @@ body::-webkit-scrollbar {
   height: 40px;
 }
 
-/* MEDIA QUERIES SERVICES */
-@media only screen and (max-width: 990px) {
-  #services .user-services {
-    transition: 0.3s;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .services .row {
-    flex-direction: row-reverse;
-  }
-}
-
 /* GALLERY */
 .gallery {
   background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
@@ -751,31 +496,6 @@ body::-webkit-scrollbar {
 
 .fancybox-progress {
   background: green !important;
-}
-
-/* MEDIA QUERIES GALLERY*/
-@media only screen and (max-width: 700px) {
-  .gallery .row {
-    flex-direction: row !important;
-  }
-
-  .gallery img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 767px) and (min-width: 576px) {
-  .last-img-gallery {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .gallery {
-    padding: 80px 0px 100px;
-  }
 }
 
 /* CONTACT */
@@ -816,12 +536,13 @@ body::-webkit-scrollbar {
 .contact-col div:nth-child(5) {
   display: initial;
 }
+
 .contact-col div:nth-child(6) {
- margin-top: 15px;
+  margin-top: 15px;
 }
 
 .contact-col .schedule {
- margin-left: 65px;
+  margin-left: 65px;
 }
 
 .contact-col div .fas {
@@ -876,20 +597,6 @@ body::-webkit-scrollbar {
   margin-top: -82px;
   margin-left: 54px;
   background: #F9F9F9;
-}
-
-/* MEDIA QUERIES */
-@media only screen and (max-width: 768px) {
-  .contact-us p {
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .home .content .btn {
-    font-size: 0.8rem !important;
-    padding: 10px 20px;
-  }
 }
 
 /* FOOTER */
@@ -982,38 +689,6 @@ body::-webkit-scrollbar {
   color: var(--esquadria-green);
 }
 
-/* MEDIA QUERIES FOOTER */
-@media only screen and (max-width: 992px) {
-  #footer p {
-    font-size: 9px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-
-  #footer p,
-  #footer ul li a {
-    font-size: 0.7rem;
-  }
-
-  #services .user-services {
-    margin-top: 50px;
-  }
-}
-
-@media (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  #footer {
-    padding: 25px 25px 0;
-    width: 100%;
-  }
-}
-
 /* THANKS PAGE */
 .thanks-page {
   background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
@@ -1028,13 +703,6 @@ body::-webkit-scrollbar {
 
 .thanks-page:before {
   opacity: 0;
-}
-
-/* MEDIA QUERIES THANKS PAGE */
-@media only screen and (max-width: 768px) {
-  .thanks-page p {
-    font-size: 1rem;
-  }
 }
 
 /* COOKIES PAGE */
@@ -1090,223 +758,7 @@ body::-webkit-scrollbar {
 .privacy-policy h2 {
   margin-top: 35px;
 }
+
 .privacy-policy h3 {
   margin-top: 45px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .cookies {
-    padding: 25px;
-  }
-
-  .cookies .container {
-    padding: 25px 60px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .cookies .container {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .cookies {
-    padding: 10px;
-    text-align: center;
-  }
-
-  .cookies p {
-    text-align: justify;
-    font-size: 11px;
-  }
-
-  .container-title h1 {
-    font-size: 1.6rem;
-  }
-
-  .cookies h2 {
-    font-size: 1.2rem;
-  }
-
-  .cookies .container {
-    padding: 15px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .thanks-page p {
-    font-size: 1rem;
-  }
-
-  .thanks-page {
-    background-position: 55% center;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .thanks-page p {
-    font-size: 0.8rem;
-  }
-}
-
-/* MEDIA QUERIES LAND SCAPE MODE */
-/* BLACK BERRY Z30*/
-@media only screen and (max-height: 366px) and (max-width: 650px) {
-  .home .content {
-    margin-top: 15px;
-  }
-
-  .home .content h2 {
-    font-size: 1.5rem;
-  }
-
-  .home .media-icons {
-    margin-top: -35px;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  #banner .banner-highlights {
-    margin-top: -70px !important;
-    padding: 50px 0;
-  }
-}
-
-@media only screen and (max-height: 480px) and (max-width: 800px) {}
-
-/* PIXEL 2 XL */
-@media only screen and (max-height: 421px) and (max-width: 823px) {
-  .title {
-    font-size: 2rem;
-  }
-
-  #banner .banner-highlights {
-    margin-top: -70px !important;
-    padding: 50px 0;
-  }
-}
-
-/* PIXEL 2 */
-@media only screen and (max-height: 411px) and (max-width: 731px) {}
-
-/* iPhone 6/7/8 PLUS */
-@media only screen and (max-height: 436px) and (max-width: 736px) {}
-
-/* SURFACE DUO */
-@media only screen and (max-height: 542px) and (max-width: 721px) {
-  #banner .banner-highlights {
-    margin-top: 10px !important;
-    padding: 30px 0;
-  }
-}
-
-/* iPhone  X*/
-@media only screen and (max-height: 375px) and (max-width: 1000px) {
-  .home .content {
-    margin-top: -20px;
-  }
-
-  .home .content {
-    margin-top: 15px;
-  }
-
-  .home .content h2 {
-    font-size: 1.8rem;
-  }
-
-  .home .content h3 {
-    font-size: 1.5rem;
-  }
-
-  .home .content p {
-    font-size: 1.1rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .home .media-icons {
-    margin-top: -135px;
-  }
-
-  #banner .banner-highlights {
-    margin-top: -60px !important;
-    padding: 30px 0;
-  }
-}
-
-/* iPhone  6/7/8*/
-@media only screen and (max-height: 375px) and (max-width: 667px) {
-  .home .content {
-    margin-top: -20px;
-  }
-
-  .home .content {
-    margin-top: 15px;
-  }
-
-  .home .content h2 {
-    font-size: 1.5rem;
-  }
-
-  .home .content h3 {
-    font-size: 1.3rem;
-  }
-
-  .home .content p {
-    font-size: 0.8rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .home .media-icons {
-    margin-top: -135px;
-  }
-
-  #banner .banner-highlights {
-    margin-top: -60px !important;
-    padding: 30px 0;
-  }
-}
-
-/* iPhone 5/SE */
-@media only screen and (max-height: 321px) and (max-width: 570px) {
-  .home .content {
-    margin-top: -20px;
-  }
-
-  .home .content {
-    margin-top: 15px;
-  }
-
-  .home .content h2 {
-    font-size: 1.5rem;
-  }
-
-  .home .content h3 {
-    font-size: 1.3rem;
-  }
-
-  .home .content p {
-    font-size: 0.8rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .home .media-icons {
-    margin-top: -135px;
-  }
-
-  #banner .banner-highlights {
-    margin-top: -60px !important;
-    padding: 30px 0;
-  }
 }
