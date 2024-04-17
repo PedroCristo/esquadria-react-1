@@ -1,5 +1,5 @@
 import cookiesPolicyDB from "../data/cookies_policy";
-import CookiesPrivacy from "../components/layout/CookiesPrivacy";
+import CookiesPrivacy from "../utilities/CookiesPrivacy";
 import { useEffect } from "react";
 
 function CookiesPage() {

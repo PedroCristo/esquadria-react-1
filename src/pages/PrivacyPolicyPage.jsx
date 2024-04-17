@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import privacyPolicyDB from "../data/privacy_policy";
-import CookiesPrivacy from "../components/layout/CookiesPrivacy";
+import CookiesPrivacy from "../utilities/CookiesPrivacy";
 
 function PrivacyPolicyPage() {
   useEffect(() => {
