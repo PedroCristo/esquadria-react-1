@@ -24,7 +24,7 @@ const navLinksDb = [
     },
     {
         id: 5,
-        title: "Contact",
+        title: "Contacto",
         LinkUrl: "/página-principal#contact"
     },
     {
