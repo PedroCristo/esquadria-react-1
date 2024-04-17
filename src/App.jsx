@@ -6,6 +6,7 @@ import MainPage from "./pages/MainPage";
 import ThanksPage from "./pages/ThanksPage";
 import CookiesPage from "./pages/CookiesPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import Page404 from "./pages/error/404";
 import PreLoader from "./utilities/preloader/PreLoader";
 import Cookies from "./utilities/cookies/Cookies";
 import Layout from "./utilities/layout/Layout";
@@ -23,6 +24,7 @@ function App() {
         <Route path="/página-agradecimiento" element={<ThanksPage />} />
         <Route path="/política-cookies" element={<Layout><CookiesPage /></Layout>} />
         <Route path="/política-privacidade" element={<Layout><PrivacyPolicyPage /></Layout>} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
       <PreLoader />
       <Cookies />

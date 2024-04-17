@@ -318,6 +318,23 @@
     .cookies .container {
         padding: 15px;
     }
+    /* Page Error 404 */
+    .page404 .container h1 {
+        color: #415c43;
+        font-size: 5rem;
+        font-weight: bolder;
+     }
+     
+     .page404 .container h2 {
+        color: #bec4bf;
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+     }
+     
+     .page404 .container p {
+        color: #f8fdf9;
+        font-size: 1.3rem;
+     }
 }
 
 @media only screen and (max-width: 650px) {
@@ -361,7 +378,11 @@
     }
 }
 
-@media only screen and (max-height: 480px) and (max-width: 800px) {}
+@media only screen and (max-height: 500px) and (max-width: 900px) {
+    .page404 {
+        height: initial;
+      }
+}
 
 /* PIXEL 2 XL */
 @media only screen and (max-height: 421px) and (max-width: 823px) {

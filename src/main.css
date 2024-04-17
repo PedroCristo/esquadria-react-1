@@ -387,7 +387,7 @@ body::-webkit-scrollbar {
   margin: 35px 0;
 }
 
- .about .col-md-6 img {
+.about .col-md-6 img {
   width: 100%;
   padding-right: 25px;
 }
@@ -407,7 +407,8 @@ body::-webkit-scrollbar {
   padding-top: 14%;
   height: 50vh;
   width: 100%;
-  position: relative; /* Add this line */
+  position: relative;
+  /* Add this line */
 }
 
 #banner .banner-highlights {
@@ -417,14 +418,14 @@ body::-webkit-scrollbar {
   width: 100%;
   padding: 50px;
   position: absolute;
-  top: 50%; 
+  top: 50%;
   transform: translateY(-50%);
 }
 
 #banner .col-md-4 {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -793,4 +794,37 @@ body::-webkit-scrollbar {
 
 .privacy-policy p {
   margin-top: -50px;
+}
+
+/* ERROR PAGE 404 */
+.page404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), 
+  url('../public/images/desktop/esquadria-cozinhas/esquadria_cozinha_18.jpg');
+}
+
+.page404 .container h1 {
+   color: #415c43;
+   font-size: 8rem;
+   font-weight: bolder;
+}
+
+.page404 .container h2 {
+   color: #bec4bf;
+   font-size: 2rem;
+   margin-bottom: 25px;
+}
+
+.page404 .container p {
+   color: #f8fdf9;
+   font-size: 1.5rem;
+}
+
+.page404 .btn {
+  width: 300px;
+  margin: 50px auto;
 }
