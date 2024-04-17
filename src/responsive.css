@@ -139,23 +139,23 @@
     }
 }
 
-/* MEDIA QUERIES ABOUT-US*/
+/* MEDIA QUERIES ABOUT*/
 @media only screen and (max-width: 900px) and (min-width: 800px) {
-    .about-us-col img {
+    .about .col-md-6 img {
         margin-top: 100px;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .about-us .row {
+    .about .row {
         flex-direction: column !important;
     }
 
-    .about-us .row-reverse {
-        flex-direction: column-reverse !important;
+    .about .col-md-6 {
+        width: 100%;
     }
 
-    .about-us-col img {
+    .about .col-md-6 img {
         height: initial;
         padding-right: 0px;
         width: 100%;
@@ -166,11 +166,11 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .about-us {
+    .about {
         text-align: center;
     }
 
-    .about-us-col h1 {
+    .about h1 {
         font-size: 1.3rem;
     }
 
@@ -181,9 +181,7 @@
 
 /* MEDIA QUERIES BANNER */
 @media only screen and (max-width: 800px) {
-    #banner .banner-highlights {
-        margin-top: 180px !important;
-    }
+
 }
 
 /* MEDIA QUERIES SERVICES */

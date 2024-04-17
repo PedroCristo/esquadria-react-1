@@ -7,7 +7,7 @@ function ContactSection() {
   const schedule = companySchedule();
 
   return (
-    <section className="contact-us">
+    <section id="contact" className="contact-us">
       <h1 className="title">Contacto</h1>
       <img
         src="images/logos/esquadria_logo.png"
@@ -50,7 +50,7 @@ function ContactSection() {
             <span>info@esquadria-sa.pt</span>
           </div>
         </div>
-        <div className="contact-col" id="contact">
+        <div className="contact-col">
           <Form />
         </div>
       </div>
