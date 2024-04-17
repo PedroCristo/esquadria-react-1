@@ -15,7 +15,7 @@ function AboutSection() {
           key={aboutItem.id}
         >
           {/* About content column */}
-          <div className="col-md-6">
+          <div className="col-md-6 coll">
             <h1>{aboutItem.title}</h1>
             {aboutItem.content.map((aboutParagraph) => (
               <p key={aboutParagraph.id}>{aboutParagraph.content_paragraph}</p>

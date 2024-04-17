@@ -19,7 +19,7 @@
 .title {
   margin-bottom: 70px;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--font-dark);
   font-weight: 400;
 }
@@ -42,6 +42,13 @@ body::-webkit-scrollbar {
 
 .row-reverse {
   flex-direction: row-reverse !important;
+}
+
+.coll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .img-title {
@@ -118,12 +125,12 @@ body::-webkit-scrollbar {
 .header .navigation .navigation-items ul li a {
   position: relative;
   color: #f1ebeb;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 0.8em;
   text-decoration: none;
   margin-left: 30px;
   transition: 0.3s ease;
   text-transform: uppercase;
+  letter-spacing: 2px;
   border: 2px solid transparent;
   padding: 8px 10px;
   margin: 0 5px;
@@ -402,6 +409,7 @@ body::-webkit-scrollbar {
 .about p {
   padding: 15px 0px 25px;
   width: 95%;
+  font-size: 1rem;
 }
 
 /* BANNER SECTION */
@@ -558,7 +566,7 @@ body::-webkit-scrollbar {
 }
 
 .contact-us p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 50px;
 }
 
