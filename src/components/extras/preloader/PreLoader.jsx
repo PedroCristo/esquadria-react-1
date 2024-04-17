@@ -5,7 +5,7 @@ import "./PreLoader.css"
 function PreLoader() {
   useEffect(() => {
     const loader = document.getElementById("preloader");
-    loader.style.display = "block"; // Set display to "none" to hide the loader
+    loader.style.display = "none"; // Set display to "none" to hide the loader
   }, []);
 
   return <div id="preloader" className="preloader"></div>;
