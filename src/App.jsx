@@ -1,7 +1,7 @@
 import "./main.css";
 import "./normalized.css";
 import "./responsive.css";
-import LandingPage from "./pages/LandingPage/LandingPage";
+import LandingPage from "./pages/LandingPage";
 import MainPage from "./pages/MainPage";
 import ThanksPage from "./pages/ThanksPage";
 import CookiesPage from "./pages/CookiesPage";
@@ -11,6 +11,7 @@ import Cookies from "./utilities/cookies/Cookies";
 import Layout from "./utilities/layout/Layout";
 import ScrollToTop from "./components/extras/ScrollTop";
 import {Routes, Route} from "react-router-dom";
+
 
 function App() {
   return (
