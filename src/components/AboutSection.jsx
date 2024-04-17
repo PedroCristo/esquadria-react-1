@@ -1,4 +1,4 @@
-import aboutDB from "../js/about";
+import aboutDB from "../data/about";
 
 function AboutSection() {
   return (

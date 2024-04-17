@@ -7,9 +7,9 @@ import ThanksPage from "./pages/ThanksPage";
 import CookiesPage from "./pages/CookiesPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import Page404 from "./pages/error/404";
-import PreLoader from "./utilities/preloader/PreLoader";
-import Cookies from "./utilities/cookies/Cookies";
-import Layout from "./utilities/layout/Layout";
+import PreLoader from "./components/extras/preloader/PreLoader";
+import Cookies from "./components/extras/cookies/Cookies";
+import Layout from "./components/extras/Layout";
 import ScrollToTop from "./components/extras/ScrollTop";
 import {Routes, Route} from "react-router-dom";
 

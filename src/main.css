@@ -804,7 +804,7 @@ body::-webkit-scrollbar {
   height: 100vh;
   text-align: center;
   background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), 
-  url('../public/images/desktop/esquadria-cozinhas/esquadria_cozinha_18.jpg');
+  url('../images/desktop/esquadria-cozinhas/esquadria_cozinha_18.jpg');
 }
 
 .page404 .container h1 {
