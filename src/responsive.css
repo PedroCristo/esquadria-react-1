@@ -74,6 +74,14 @@
         border-radius: 5px;
         box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
     }
+
+    .menu-btn .fa-bars {
+        display: block !important;
+    }
+
+    .menu-btn .fa-bars.active {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 560px) {

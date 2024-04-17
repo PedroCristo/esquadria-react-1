@@ -45,18 +45,17 @@ function Navbar({ showFullMenu }) {
       <div className="menu-btn" onClick={toggleMenu}>
         {/* Bars icon for closed menu */}
         <i
-          className={`fa fa-bars ${isMenuOpen ? "active" : "fa-bars"} ${
+          className={`fa fa-bars ${isMenuOpen ? "active" : "fa fa-bars"} ${
             isScrolled ? "fa-active" : ""
-          }`}
+          } ${showFullMenu ? "" : "color-dark"}`}
         ></i>
         {/* Times icon for open menu */}
         <i
-          className={`fa fa-times ${isMenuOpen ? "active" : "fa-times"} ${
+          className={`fa fa-times ${isMenuOpen ? "active" : "fa fa-times"} ${
             isScrolled ? "fa-active" : ""
-          }`}
+          } ${showFullMenu ? "" : "color-dark"}`}
         ></i>
       </div>
-
       {/* Navigation menu */}
       <nav
         className={`navigation ${isMenuOpen ? "active" : ""}`}

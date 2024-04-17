@@ -96,6 +96,9 @@ body::-webkit-scrollbar {
   right: 50px;
   top: 40px;
 }
+.menu-btn .fa-active{
+  color: var(--font-dark);
+}
 
 .header .navigation {
   position: relative;
