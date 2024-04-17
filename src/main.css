@@ -130,10 +130,12 @@ body::-webkit-scrollbar {
   margin-left: 30px;
   transition: 0.3s ease;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
   border: 2px solid transparent;
-  padding: 8px 10px;
-  margin: 0 5px;
+  padding: 8px;
+  margin: 0px 5px;
+  width: 120px;
+  text-align: center;
 }
 
 .header .navigation .navigation-items ul li a:hover {
@@ -409,7 +411,7 @@ body::-webkit-scrollbar {
 .about p {
   padding: 15px 0px 25px;
   width: 95%;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /* BANNER SECTION */
@@ -566,7 +568,7 @@ body::-webkit-scrollbar {
 }
 
 .contact-us p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 50px;
 }
 
