@@ -100,6 +100,10 @@ body::-webkit-scrollbar {
   color: var(--font-dark);
 }
 
+.menu-btn .fa-times:before {
+  display: none;
+}
+
 .header .navigation {
   position: relative;
 }
