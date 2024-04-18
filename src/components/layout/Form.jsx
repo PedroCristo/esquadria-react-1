@@ -39,13 +39,13 @@ function Form() {
       <button type="submit" className="btn form-btn">
         Enviar
       </button>
-      {/* Google ReCaptcha Error */}
+      {/* Google ReCaptcha */}
       <ReCAPTCHA
-        sitekey={"6LeD0oYbAAAAADhMeKCO4x9QGAF0BMKKqw_o4zXq"}
+        sitekey={"6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
         onChange={handleRecaptchaChange}
         hl={"pt"}
       />
-      <p className={alertMessage ? "alert" : null}>{alertMessage}</p>
+      <h6 className={alertMessage ? "alert" : null}>{alertMessage}</h6>
     </form>
   );
 }

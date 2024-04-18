@@ -44,6 +44,10 @@ body::-webkit-scrollbar {
   color: var(--font-dark) !important;
 }
 
+.alert {
+  color: rgb(224, 65, 65) !important;
+}
+
 .row-reverse {
   flex-direction: row-reverse !important;
 }
@@ -557,14 +561,14 @@ body::-webkit-scrollbar {
 .location {
   width: 80%;
   margin: auto;
-  padding: 80px 0;
+  padding: 70px 0;
   margin-top: -100px;
 }
 
 .location iframe {
   width: 100%;
   border-radius: 25px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px 0 rgba(3, 3, 3, 0.6);
 }
 
 .contact-us {
@@ -647,11 +651,10 @@ body::-webkit-scrollbar {
   background: var(--esquadria-green);
 }
 
-.robot_msg {
+form h6 {
   position: absolute;
-  margin-top: -82px;
-  margin-left: 54px;
-  background: #F9F9F9;
+  margin-top: -130px;
+  margin-left: -15px;
 }
 
 /* FOOTER */
