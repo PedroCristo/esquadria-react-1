@@ -1,3 +1,16 @@
+
+
+
+@media only screen and (min-width:1601px) {
+    .about .col-md-6 img {
+        width: 80%;
+    }
+    
+    .about p {
+        width: 80%;
+    }
+}
+
 @media only screen and (min-width:1368px) {
     .home p {
         font-size: 1.5rem;
@@ -6,7 +19,6 @@
     #services .user-services {
         height: 550px;
     }
-
 }
 
 @media only screen and (max-width: 1040px) {
@@ -178,6 +190,7 @@
 @media only screen and (max-width: 500px) {
     .about {
         text-align: center;
+        width: 95% !important;
     }
 
     .about h1 {
@@ -186,6 +199,18 @@
 
     .title {
         font-size: 2.2rem;
+    }
+
+    .coll {
+        align-items: center;
+    }
+    
+    #banner {
+        height: 80vh;
+    }
+
+    #services .row .col-md-4 {
+        width: 100% !important;
     }
 }
 

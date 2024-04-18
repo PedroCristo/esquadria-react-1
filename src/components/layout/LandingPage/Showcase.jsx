@@ -1,4 +1,4 @@
-import "./LandingPage.css";
+// import "./LandingPage.css";
 import React from "react";
 import PropTypes from "prop-types";
 import { HashLink as Link } from "react-router-hash-link";

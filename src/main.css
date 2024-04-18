@@ -521,7 +521,7 @@ body::-webkit-scrollbar {
 /* GALLERY */
 .gallery {
   background-image: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url(..images/desktop/extra/cozinha_exemplo_2.jpg);
+    url(../images/desktop/extra/cozinha_exemplo_2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

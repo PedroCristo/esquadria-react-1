@@ -321,7 +321,7 @@ video {
         right: 100%;
     }
 
-    .fa-times.active {
+    #showcase.fa-times.active {
         display: none !important;
     }
 
