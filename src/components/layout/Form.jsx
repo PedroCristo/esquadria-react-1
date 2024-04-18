@@ -1,10 +1,29 @@
+import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+
 function Form() {
+  const [isRecaptchaChecked, setIsRecaptchaChecked] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
+
+  const handleRecaptchaChange = () => {
+    setIsRecaptchaChecked(true);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (isRecaptchaChecked) {
+      e.target.submit();
+    } else {
+      setAlertMessage("Por favor, complete o Recaptcha!");
+    }
+  };
   return (
     <form
       method="POST"
-      action="/thanks.html"
+      action="/página-agradecimiento"
       data-netlify="true"
       data-netlify-recaptcha="true"
+      onSubmit={handleSubmit}
     >
       <input type="hidden" name="_captcha" value="false" />
       <input type="text" name="name" placeholder="Nome" required />
@@ -21,10 +40,12 @@ function Form() {
         Enviar
       </button>
       {/* Google ReCaptcha Error */}
-      <div id="g-recaptcha-error" className="recaptcha-error"></div>
-      <div className="recaptcha-box" data-netlify-recaptcha="true">
-        <div className="robot_msg">Não sou um robot</div>
-      </div>
+      <ReCAPTCHA
+        sitekey={"6LeD0oYbAAAAADhMeKCO4x9QGAF0BMKKqw_o4zXq"}
+        onChange={handleRecaptchaChange}
+        hl={"pt"}
+      />
+      <p className={alertMessage ? "alert" : null}>{alertMessage}</p>
     </form>
   );
 }
