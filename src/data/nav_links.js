@@ -32,16 +32,16 @@ const navLinksDb = [
         title: "Intro",
         LinkUrl: "/"
     },
-    {
-        id: 7,
-        title: "Política de Cookies",
-        LinkUrl: "/política-cookies"
-    },
-    {
-        id: 8,
-        title: "Política de Privacidade",
-        LinkUrl: "/política-privacidade"
-    },
+    // {
+    //     id: 7,
+    //     title: "Política de Cookies",
+    //     LinkUrl: "/política-cookies"
+    // },
+    // {
+    //     id: 8,
+    //     title: "Política de Privacidade",
+    //     LinkUrl: "/política-privacidade"
+    // },
 ]
 
 export default navLinksDb;
