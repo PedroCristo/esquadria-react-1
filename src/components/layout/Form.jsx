@@ -20,7 +20,7 @@ function Form() {
   return (
     <form
       method="POST"
-      action="esquadria.netlify.app/página-agradecimento"
+      action="/página-agradecimento"
       data-netlify="true"
       data-netlify-recaptcha="true"
       onSubmit={handleSubmit}
