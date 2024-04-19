@@ -229,7 +229,6 @@
     /* CONTACT */
     .location {
         width: 95%;
-        margin-top: -100px;
     }
 }
 
@@ -293,6 +292,7 @@
     .home .content .btn {
         font-size: 0.8rem !important;
         padding: 10px 20px;
+        margin-top: 55px;
     }
 
     /* GALLERY SECTION */
@@ -368,245 +368,254 @@
     }
 }
 
-@media only screen and (max-width: 386px) {
-
-    /* FOOTER */
-    #footer .container .copyright {
-        font-size: 0.7rem;
-    }
-}
-
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 410px) {
 
     /* HOME */
-    .home .content {
-        margin-top: -10px;
-    }
-
-    .home .content h2 {
-        font-size: 1.3em;
-        margin: 15px 0 -15px;
-    }
-
-    .home .content h3 {
-        font-size: 1.1em;
-        margin-bottom: -15px;
-    }
-
     .home .content .btn {
-        font-size: 0.8em;
-    }
+        width: 260px;
+        margin-top: 80px;
 
-    /* HEADER */
-    header .logo {
-        width: 80px;
-        margin-top: 25px;
     }
 }
+    @media only screen and (max-width: 386px) {
 
-/* MEDIA QUERIES LAND SCAPE MODE */
-/* MEDIA QUERIES ABOUT*/
-@media only screen and (max-width: 900px) and (min-width: 800px) {
-
-    /* ABOUT SECTION */
-    .about .col-md-6 img {
-        margin-top: 100px;
-    }
-}
-
-@media only screen and (max-width: 767px) and (min-width: 576px) {
-
-    /* GALLERY SECTION */
-    .last-img-gallery {
-        display: none;
-    }
-}
-
-/* BLACK BERRY Z30*/
-@media only screen and (max-height: 366px) and (max-width: 650px) {
-
-    /* GENERAL STYLES */
-    .title {
-        font-size: 2rem;
+        /* FOOTER */
+        #footer .container .copyright {
+            font-size: 0.7rem;
+        }
     }
 
-    /* HOME */
-    .home .content {
-        margin-top: 15px;
+    @media only screen and (max-width: 380px) {
+
+        /* HOME */
+        .home .content {
+            margin-top: -10px;
+        }
+
+        .home .content h2 {
+            font-size: 1.3em;
+            margin: 15px 0 -15px;
+        }
+
+        .home .content h3 {
+            font-size: 1.1em;
+            margin-bottom: -15px;
+        }
+
+        .home .content .btn {
+            font-size: 0.8em;
+        }
+
+        /* HEADER */
+        header .logo {
+            width: 80px;
+            margin-top: 25px;
+        }
     }
 
-    .home .content h2 {
-        font-size: 1.5rem;
+    /* MEDIA QUERIES LAND SCAPE MODE */
+    /* MEDIA QUERIES ABOUT*/
+    @media only screen and (max-width: 900px) and (min-width: 800px) {
+
+        /* ABOUT SECTION */
+        .about .col-md-6 img {
+            margin-top: 100px;
+        }
     }
 
-    .home .media-icons {
-        margin-top: -35px;
+    @media only screen and (max-width: 767px) and (min-width: 576px) {
+
+        /* GALLERY SECTION */
+        .last-img-gallery {
+            display: none;
+        }
     }
 
-    /* BANNER SECTION */
-    #banner .banner-highlights {
-        margin-top: -70px !important;
-        padding: 50px 0;
-    }
-}
+    /* BLACK BERRY Z30*/
+    @media only screen and (max-height: 366px) and (max-width: 650px) {
 
-@media only screen and (max-height: 500px) and (max-width: 900px) {
+        /* GENERAL STYLES */
+        .title {
+            font-size: 2rem;
+        }
 
-    /* 404 ERROR PAGE  */
-    .page404 {
-        height: initial;
-    }
-}
+        /* HOME */
+        .home .content {
+            margin-top: 15px;
+        }
 
-/* PIXEL 2 XL */
-@media only screen and (max-height: 421px) and (max-width: 823px) {
+        .home .content h2 {
+            font-size: 1.5rem;
+        }
 
-    /* GENERAL STYLES */
-    .title {
-        font-size: 2rem;
-    }
+        .home .media-icons {
+            margin-top: -35px;
+        }
 
-    /* BANNER SECTION  */
-    #banner .banner-highlights {
-        margin-top: -70px !important;
-        padding: 50px 0;
-    }
-}
-
-/* PIXEL 2 */
-@media only screen and (max-height: 411px) and (max-width: 731px) {}
-
-/* iPhone 6/7/8 PLUS */
-@media only screen and (max-height: 436px) and (max-width: 736px) {}
-
-/* SURFACE DUO */
-@media only screen and (max-height: 542px) and (max-width: 721px) {
-
-    /* BANNER SECTION  */
-    #banner .banner-highlights {
-        margin-top: 10px !important;
-        padding: 30px 0;
-    }
-}
-
-/* iPhone  X*/
-@media only screen and (max-height: 375px) and (max-width: 1000px) {
-
-    /* GENERAL STYLES */
-    .title {
-        font-size: 2rem;
+        /* BANNER SECTION */
+        #banner .banner-highlights {
+            margin-top: -70px !important;
+            padding: 50px 0;
+        }
     }
 
-    /* HOME */
-    .home .content {
-        margin-top: -20px;
+    @media only screen and (max-height: 500px) and (max-width: 900px) {
+
+        /* 404 ERROR PAGE  */
+        .page404 {
+            height: initial;
+        }
     }
 
-    .home .content {
-        margin-top: 15px;
+    /* PIXEL 2 XL */
+    @media only screen and (max-height: 421px) and (max-width: 823px) {
+
+        /* GENERAL STYLES */
+        .title {
+            font-size: 2rem;
+        }
+
+        /* BANNER SECTION  */
+        #banner .banner-highlights {
+            margin-top: -70px !important;
+            padding: 50px 0;
+        }
     }
 
-    .home .content h2 {
-        font-size: 1.8rem;
+    /* PIXEL 2 */
+    @media only screen and (max-height: 411px) and (max-width: 731px) {}
+
+    /* iPhone 6/7/8 PLUS */
+    @media only screen and (max-height: 436px) and (max-width: 736px) {}
+
+    /* SURFACE DUO */
+    @media only screen and (max-height: 542px) and (max-width: 721px) {
+
+        /* BANNER SECTION  */
+        #banner .banner-highlights {
+            margin-top: 10px !important;
+            padding: 30px 0;
+        }
     }
 
-    .home .content h3 {
-        font-size: 1.5rem;
+    /* iPhone  X*/
+    @media only screen and (max-height: 375px) and (max-width: 1000px) {
+
+        /* GENERAL STYLES */
+        .title {
+            font-size: 2rem;
+        }
+
+        /* HOME */
+        .home .content {
+            margin-top: -20px;
+        }
+
+        .home .content {
+            margin-top: 15px;
+        }
+
+        .home .content h2 {
+            font-size: 1.8rem;
+        }
+
+        .home .content h3 {
+            font-size: 1.5rem;
+        }
+
+        .home .content p {
+            font-size: 1.1rem;
+        }
+
+        .home .media-icons {
+            margin-top: -135px;
+        }
+
+        /* BANNER SECTION */
+        #banner .banner-highlights {
+            margin-top: -60px !important;
+            padding: 30px 0;
+        }
     }
 
-    .home .content p {
-        font-size: 1.1rem;
+    /* iPhone  6/7/8*/
+    @media only screen and (max-height: 375px) and (max-width: 667px) {
+
+        /* GENERAL STYLES */
+        .title {
+            font-size: 2rem;
+        }
+
+        /* HOME */
+        .home .content {
+            margin-top: -20px;
+        }
+
+        .home .content {
+            margin-top: 15px;
+        }
+
+        .home .content h2 {
+            font-size: 1.5rem;
+        }
+
+        .home .content h3 {
+            font-size: 1.3rem;
+        }
+
+        .home .content p {
+            font-size: 0.8rem;
+        }
+
+
+        .home .media-icons {
+            margin-top: -135px;
+        }
+
+        /* BANNER SECTION */
+        #banner .banner-highlights {
+            margin-top: -60px !important;
+            padding: 30px 0;
+        }
     }
 
-    .home .media-icons {
-        margin-top: -135px;
+    /* iPhone 5/SE */
+    @media only screen and (max-height: 321px) and (max-width: 570px) {
+
+        /* GENERAL STYLES */
+        .title {
+            font-size: 2rem;
+        }
+
+        /* HOME */
+        .home .content {
+            margin-top: -20px;
+        }
+
+        .home .content {
+            margin-top: 15px;
+        }
+
+        .home .content h2 {
+            font-size: 1.5rem;
+        }
+
+        .home .content h3 {
+            font-size: 1.3rem;
+        }
+
+        .home .content p {
+            font-size: 0.8rem;
+        }
+
+
+        .home .media-icons {
+            margin-top: -135px;
+        }
+
+        /* BANNER SECTION */
+        #banner .banner-highlights {
+            margin-top: -60px !important;
+            padding: 30px 0;
+        }
     }
-
-    /* BANNER SECTION */
-    #banner .banner-highlights {
-        margin-top: -60px !important;
-        padding: 30px 0;
-    }
-}
-
-/* iPhone  6/7/8*/
-@media only screen and (max-height: 375px) and (max-width: 667px) {
-
-    /* GENERAL STYLES */
-    .title {
-        font-size: 2rem;
-    }
-
-    /* HOME */
-    .home .content {
-        margin-top: -20px;
-    }
-
-    .home .content {
-        margin-top: 15px;
-    }
-
-    .home .content h2 {
-        font-size: 1.5rem;
-    }
-
-    .home .content h3 {
-        font-size: 1.3rem;
-    }
-
-    .home .content p {
-        font-size: 0.8rem;
-    }
-
-
-    .home .media-icons {
-        margin-top: -135px;
-    }
-
-    /* BANNER SECTION */
-    #banner .banner-highlights {
-        margin-top: -60px !important;
-        padding: 30px 0;
-    }
-}
-
-/* iPhone 5/SE */
-@media only screen and (max-height: 321px) and (max-width: 570px) {
-
-    /* GENERAL STYLES */
-    .title {
-        font-size: 2rem;
-    }
-
-    /* HOME */
-    .home .content {
-        margin-top: -20px;
-    }
-
-    .home .content {
-        margin-top: 15px;
-    }
-
-    .home .content h2 {
-        font-size: 1.5rem;
-    }
-
-    .home .content h3 {
-        font-size: 1.3rem;
-    }
-
-    .home .content p {
-        font-size: 0.8rem;
-    }
-
-
-    .home .media-icons {
-        margin-top: -135px;
-    }
-
-    /* BANNER SECTION */
-    #banner .banner-highlights {
-        margin-top: -60px !important;
-        padding: 30px 0;
-    }
-}

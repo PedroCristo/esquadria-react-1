@@ -18,6 +18,7 @@ import {Routes, Route} from "react-router-dom";
 function App() {
   return (
     <div>
+    <PreLoader />
     <ScrollToTop>
       <Routes>
         <Route path="/" exact element={<LandingPage />} />
@@ -27,7 +28,6 @@ function App() {
         <Route path="/política-privacidade" element={<Layout><PrivacyPolicyPage /></Layout>} />
         <Route path="*" element={<Page404 />} />
       </Routes>
-      <PreLoader />
       <Cookies />
     </ScrollToTop>
     </div>
