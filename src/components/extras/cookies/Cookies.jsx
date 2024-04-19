@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Cookies.css"
+import { Link } from 'react-router-dom';
 
 function Cookies() {
   const [showCookies, setShowCookies] = useState(true);
@@ -34,15 +35,15 @@ function Cookies() {
             performance, funcionalidade e marketing. Ao pressionar “Aceitar” está a consentir o
             alojamento de cookies do nosso website no seu computador ou dispositivo móvel.
             <br />
-            <a href="cookies.html">Política de Cookies</a>
+            <Link to="política-privacidade">Política de Privacidade</Link>
           </p>
           <div className="cookies-button cookies-button-index">
             <a className="cookies-save" onClick={handleSave}>
               Aceitar
             </a>
-            <a href="https://www.google.com/" className="cookies-exit">
+            <Link to="https://www.google.com/" className="cookies-exit">
               Sair
-            </a>
+            </Link>
           </div>
         </div>
       </div>
