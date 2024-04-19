@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<LandingPage />} />
         <Route path="/página-principal" element={<Layout showFullMenu={true}><MainPage /></Layout>} />
-        <Route path="/página-agradecimento" element={<ThanksPage />} />
+        <Route path="/agradecimento" element={<ThanksPage />} />
         <Route path="/política-cookies" element={<Layout><CookiesPage /></Layout>} />
         <Route path="/política-privacidade" element={<Layout><PrivacyPolicyPage /></Layout>} />
         <Route path="*" element={<Page404 />} />
