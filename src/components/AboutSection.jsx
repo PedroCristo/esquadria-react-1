@@ -16,9 +16,9 @@ function AboutSection() {
         >
           {/* About content column */}
           <div className="col-md-6 coll">
-            <h1>{aboutItem.title}</h1>
+            <h1 className="fade-in-animation">{aboutItem.title}</h1>
             {aboutItem.content.map((aboutParagraph) => (
-              <p key={aboutParagraph.id}>{aboutParagraph.content_paragraph}</p>
+              <p className="slide-from-bottom" key={aboutParagraph.id}>{aboutParagraph.content_paragraph}</p>
             ))}
           </div>
           {/* Image column */}

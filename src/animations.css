@@ -1,0 +1,70 @@
+.pulse-animation {
+    animation: pulseAnimation 1.2s infinite, pulseAnimation2 10s infinite;
+    animation-delay: 10s;
+    opacity: 0;
+  }
+  
+  .fade-in-animation {
+    animation-name: fadeIn; /* Name of the animation */
+    animation-duration: 1s; /* Duration of the animation */
+    animation-fill-mode: forwards; /* Keeps the element at the state of the last keyframe */
+  }
+  
+  .slide-from-bottom {
+    animation: slideInFromBottom 1s ease forwards;
+  }
+
+/* PULSE ANIMATION */
+@keyframes pulseAnimation {
+    0% {
+      margin-top: 0;
+    }
+  
+    50% {
+      margin-top: -10px;
+    }
+  
+    100% {
+      margin-top: 0;
+    }
+  }
+  
+  @keyframes pulseAnimation2 {
+    10% {
+      opacity: 0;
+    }
+  
+    20% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* FADE IN Animation*/
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start opacity */
+    }
+    to {
+      opacity: 1; /* End opacity */
+    }
+  }
+  
+  /* SLIDER FROm BOTTOM ANIMATION */
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }

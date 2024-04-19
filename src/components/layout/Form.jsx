@@ -14,13 +14,13 @@ function Form() {
     if (isRecaptchaChecked) {
       e.target.submit();
     } else {
-      setAlertMessage("Por favor, complete o Recaptcha!");
+      setAlertMessage("Este campo é de preenchimento obrigatório!");
     }
   };
   return (
     <form
       method="POST"
-      action="https://esquadria.netlify.app/página-agradecimento"
+      action="/página-agradecimento"
       data-netlify="true"
       data-netlify-recaptcha="true"
       onSubmit={handleSubmit}

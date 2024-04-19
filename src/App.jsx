@@ -1,6 +1,7 @@
 import "./main.css";
 import "./normalized.css";
 import "./responsive.css";
+import "./animations.css"
 import LandingPage from "./pages/LandingPage";
 import MainPage from "./pages/MainPage";
 import ThanksPage from "./pages/ThanksPage";
