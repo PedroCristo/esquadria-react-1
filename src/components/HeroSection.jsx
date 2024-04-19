@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import heroSlides from "../data/heroSlides";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
