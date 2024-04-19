@@ -20,7 +20,7 @@ function Form() {
   return (
     <form
       method="POST"
-      action="/página-agradecimiento"
+      action="/pagina-agradecimiento"
       data-netlify="true"
       data-netlify-recaptcha="true"
       onSubmit={handleSubmit}
