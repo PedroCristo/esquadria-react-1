@@ -225,6 +225,12 @@
     .thanks-page {
         background-position: 55% center;
     }
+
+    /* CONTACT */
+    .location {
+        width: 95%;
+        margin-top: -100px;
+    }
 }
 
 @media only screen and (max-width: 560px) {
