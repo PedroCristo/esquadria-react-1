@@ -2,7 +2,7 @@ const aboutDB = [
     {
         id: 1,
         title: "Uma História com mais de 50 anos!",
-        imgUrl: "images/desktop/esquadria-cozinhas/esquadria_cozinha_19.jpg",
+        imgUrl: "images/desktop/esquadria-cozinhas/esquadria_cozinha_15.jpg",
         content: [
             {
                 id: 1,
@@ -23,7 +23,7 @@ const aboutDB = [
     {
         id: 2,
         title: "A Escolha Perfeita para Cozinhas de Excelência",
-        imgUrl: "images/desktop/esquadria-cozinhas/esquadria_cozinha_15.jpg",
+        imgUrl: "images/desktop/esquadria-cozinhas/esquadria_cozinha_19.jpg",
         content: [
             {
                 id: 3,

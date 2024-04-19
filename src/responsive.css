@@ -1,11 +1,8 @@
-
-
-
 @media only screen and (min-width:1601px) {
     .about .col-md-6 img {
         width: 80%;
     }
-    
+
     .about p {
         width: 80%;
     }
@@ -168,6 +165,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+
+    .title {}
+
     .about .row,
     .contact-us .row {
         flex-direction: column !important;
@@ -175,6 +175,13 @@
 
     .about .col-md-6 {
         width: 100%;
+    }
+
+
+    .about .row {
+        margin: 30px 0;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
     }
 
     .about .col-md-6 img {
@@ -204,7 +211,7 @@
     .coll {
         align-items: center;
     }
-    
+
     #banner {
         height: 80vh;
     }
@@ -215,9 +222,7 @@
 }
 
 /* MEDIA QUERIES BANNER */
-@media only screen and (max-width: 800px) {
-
-}
+@media only screen and (max-width: 800px) {}
 
 /* MEDIA QUERIES SERVICES */
 @media only screen and (max-width: 990px) {
@@ -353,23 +358,24 @@
     .cookies .container {
         padding: 15px;
     }
+
     /* Page Error 404 */
     .page404 .container h1 {
         color: #415c43;
         font-size: 5rem;
         font-weight: bolder;
-     }
-     
-     .page404 .container h2 {
+    }
+
+    .page404 .container h2 {
         color: #bec4bf;
         font-size: 1.6rem;
         margin-bottom: 25px;
-     }
-     
-     .page404 .container p {
+    }
+
+    .page404 .container p {
         color: #f8fdf9;
         font-size: 1.3rem;
-     }
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -416,7 +422,7 @@
 @media only screen and (max-height: 500px) and (max-width: 900px) {
     .page404 {
         height: initial;
-      }
+    }
 }
 
 /* PIXEL 2 XL */
