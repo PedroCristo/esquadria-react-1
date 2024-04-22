@@ -348,7 +348,6 @@ video {
         bottom: -25px;
         left: 50%;
         transform: translateX(-50%);
-        width: 170px;
         height: 100px;
     }
 
@@ -381,14 +380,10 @@ video {
         top: 30px;
     }
 
-    /* #showcase .christmas h4{
+    #showcase .christmas h4{
         font-size: 1.6em;
 
     }
-
-    #showcase .christmas {
-        width: 50%;
-    } */
 }
 
 @media only screen and (max-width: 350px) {
