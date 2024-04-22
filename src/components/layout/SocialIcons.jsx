@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
+import social_linksDB from "../../data/social_links";
+
 function SocialIcons() {
   return (
     <div className="media-icons">
-      <Link to="https://www.facebook.com/esquadria" target="_blank">
-        <i className="fab fa-facebook-f"></i>
-      </Link>
-      <Link to="" target="_blank">
-        <i className="fab fa-instagram"></i>
-      </Link>
-      <Link to="mailto:info@esquadria-sa.pt">
-        <i className="far fa-envelope"></i>
-      </Link>
+      {social_linksDB.map((social_item) => (
+        <Link to={social_item.linkUrl} target="_blank" key={social_item.id}>
+          <i className={social_item.socialClass}></i>
+        </Link>
+      ))}
     </div>
   );
 }

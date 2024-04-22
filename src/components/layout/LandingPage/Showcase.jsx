@@ -2,8 +2,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { HashLink as Link } from "react-router-hash-link";
+import social_linksDB from "../../../data/social_links";
+import { useChristmasMessage } from "../../../js/company_shedule";
 
 function Showcase({ isActive, toggleMenu }) {
+  const { message, christmasStyle } = useChristmasMessage();
   return (
     <section id="showcase" className={`showcase ${isActive ? "active" : ""}`}>
       <div className="header">
@@ -38,6 +41,9 @@ function Showcase({ isActive, toggleMenu }) {
       ></video>
       <div className="overlay"></div>
       <div className="text">
+        <div style={{ display: christmasStyle }} className="christmas">
+          <h4>{message}</h4>
+        </div>
         <h2>esquadria</h2>
         <h3>Explorando o mundo das cozinhas</h3>
         <p>
@@ -51,23 +57,15 @@ function Showcase({ isActive, toggleMenu }) {
       <div className="social">
         <ul>
           <li>
-            <a
-              href="https://www.facebook.com/esquadria"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="mailto:info@esquadria-sa.pt">
-              <i className="far fa-envelope"></i>
-            </a>
+            {social_linksDB.map((social_item) => (
+              <Link
+                to={social_item.linkUrl}
+                target="_blank"
+                key={social_item.id}
+              >
+                <i className={social_item.socialClass}></i>
+              </Link>
+            ))}
           </li>
         </ul>
       </div>
