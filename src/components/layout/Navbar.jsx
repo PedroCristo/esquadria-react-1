@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import PropTypes from "prop-types";
 import navLinksDb from "../../data/nav_links";
+import SocialIcons from "./SocialIcons";
 
 function Navbar({ showFullMenu }) {
   // State for tracking whether the page is scrolled or not
@@ -89,6 +90,9 @@ function Navbar({ showFullMenu }) {
               return null; // If the ID is 7 or 8, return null to exclude it from rendering
             })}
           </ul>
+          <div className="social-mobile">
+            <SocialIcons />
+          </div>
         </div>
       </nav>
     </header>

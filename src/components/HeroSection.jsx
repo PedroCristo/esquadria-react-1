@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import heroSlides from "../data/heroSlides";
 import { HashLink as Link } from "react-router-hash-link";
 
+import SocialIcons from "./layout/SocialIcons";
+
 function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,10 +23,10 @@ function HeroSection() {
     <section className="home">
       {heroSlides.map((slide, index) => (
         <div
-        key={slide.id}
-        className={`content ${index === currentIndex ? "active" : ""}`}
+          key={slide.id}
+          className={`content ${index === currentIndex ? "active" : ""}`}
         >
-        <div className="overlay"></div>
+          <div className="overlay"></div>
           <img
             className={`img-slide ${index === currentIndex ? "active" : ""}`}
             src={slide.imgSrc}
@@ -40,16 +42,8 @@ function HeroSection() {
           </div>
         </div>
       ))}
-      <div className="media-icons">
-        <a href="https://www.facebook.com/esquadria" target="_blank">
-          <i className="fab fa-facebook-f"></i>
-        </a>
-        <a href="" target="_blank">
-          <i className="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:info@esquadria-sa.pt">
-          <i className="far fa-envelope"></i>
-        </a>
+      <div className="social-desktop">
+        <SocialIcons />
       </div>
       <div className="slider-navigation">
         <div className="slider-navigation-dots">

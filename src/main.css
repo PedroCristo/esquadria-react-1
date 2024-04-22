@@ -261,33 +261,7 @@ body::-webkit-scrollbar {
   box-shadow: none;
 }
 
-.home .media-icons {
-  z-index: 888;
-  position: absolute;
-  right: 30px;
-  display: flex;
-  flex-direction: column;
-  transition: 0.5s ease;
-}
-
-.home .media-icons a {
-  color: #fff;
-  font-size: 25px;
-  transition: 0.3s ease;
-  opacity: 0.7;
-}
-
-.home .media-icons a:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.home .media-icons a:hover {
-  opacity: 1;
-}
-
 .home img {
-  z-index: 100;
-  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
@@ -361,6 +335,43 @@ body::-webkit-scrollbar {
   transition-property: clip-path;
 }
 
+/* SOCIAL ICONS */
+.media-icons {
+  z-index: 888;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+ .media-icons a {
+  color: #fff;
+  font-size: 25px;
+  transition: 0.3s ease;
+  opacity: 0.7;
+}
+
+ .media-icons a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+ .media-icons a:hover {
+  opacity: 1;
+}
+
+.social-mobile {
+  display: none;
+}
+
+.social-desktop {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: center; /* Horizontally centers the content */
+}
 
 /* ABOUT SECTION */
 .about {
