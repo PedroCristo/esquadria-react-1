@@ -39,7 +39,7 @@ function companySchedule() {
     }
 
     // Check for the shop's day off (Sunday)
-    if (td === 0) {
+    if (td === 1) {
       setSchedule(prevState => ({
         ...prevState,
         isOpen: false,

@@ -564,6 +564,7 @@ body::-webkit-scrollbar {
 
 .contact-col .schedule {
   margin-left: 65px;
+  display: block;
 }
 
 .contact-col div .fas {
