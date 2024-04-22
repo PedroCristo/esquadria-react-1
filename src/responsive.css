@@ -51,13 +51,13 @@
     header .navigation.active {
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 109vh;
         top: 0;
         left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(1, 1, 1, 0.5);
+        background: rgba(1, 1, 1, 0.7);
         z-index: -1;
     }
 
@@ -77,10 +77,11 @@
         height: 5px;
     }
 
-    header .navigation.active .navigation-items {
+    header .navigation-items {
         background: #fff;
         height: auto;
         box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+        padding: 10px 0;
     }
 
     header .navigation.active .navigation-items ul {
@@ -433,8 +434,8 @@
         width: 230px;
     }
 
-    header .navigation.active .navigation-items ul {
-        padding: 83px;
+    header .navigation {
+        padding: 26px !important;
     }
 
     /* SOCIAL ICONS */
@@ -450,19 +451,14 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        bottom: 0px;
+        margin-bottom: 55px;
         left: 50%;
         transform: translateX(-50%);
         background-color: #415c43;
         width: 100%;
         height: 60px;
+        bottom: 25px;
     }
-
-    header .navigation.active .navigation-items {
-        height: 100vh;
-        position: relative;
-    }
-
 
     .media-icons a {
         color: var(--overlay-black);
@@ -475,9 +471,6 @@
         width: 80px;
         margin-top: 25px;
     }
-    .menu-btn .fa-times {
-        color: initial;
-    }
 }
 
 @media only screen and (max-width: 330px) {
@@ -488,17 +481,35 @@
     .home .content p {
         width: 255px;
     }
+
+    .media-icons {
+       margin-bottom:  15px;
+    }
+
+    .home .home-content h1 {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+
+
+    .menu-btn .fa-times {
+        margin-top: 25px;
+        /* color: initial; */
+    }
 }
 
 @media only screen and (max-height: 652px) {
 
-    header .navigation.active .navigation-items {
-        height: 95vh !important;
+    header .navigation .navigation-items ul  {
+        padding: 5px !important;
     }
 
-    .menu-btn .fa-times {
-        color: initial;
+    .menu .fa-times {
+        top: -15px !important;
     }
+
 }
 
 /* MEDIA QUERIES LAND SCAPE MODE */

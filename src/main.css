@@ -339,7 +339,8 @@ body::-webkit-scrollbar {
 .media-icons {
   z-index: 888;
   position: absolute;
-  right: 30px;
+  right: 30px; 
+  bottom: 0;
   display: flex;
   flex-direction: column;
   transition: 0.5s ease;

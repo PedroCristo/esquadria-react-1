@@ -40,11 +40,11 @@ function Form() {
         Enviar
       </button>
       {/* Google ReCaptcha */}
-      <ReCAPTCHA
+      {/* <ReCAPTCHA
         sitekey={"6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
         onChange={handleRecaptchaChange}
         hl={"pt"}
-      />
+      /> */}
       <h6 className={alertMessage ? "alert" : null}>{alertMessage}</h6>
     </form>
   );

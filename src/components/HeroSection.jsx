@@ -43,7 +43,7 @@ function HeroSection() {
         </div>
       ))}
       <div className="social-desktop">
-        <SocialIcons />
+        <SocialIcons/>
       </div>
       <div className="slider-navigation">
         <div className="slider-navigation-dots">

@@ -1,7 +1,4 @@
-
 import { Link } from "react-router-dom";
-
-
 function SocialIcons() {
   return (
     <div className="media-icons">
