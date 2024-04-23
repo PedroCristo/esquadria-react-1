@@ -6,7 +6,7 @@ import social_linksDB from "../../../data/social_links";
 import { useChristmasMessage } from "../../../js/company_shedule";
 
 function Showcase({ isActive, toggleMenu }) {
-  const { message, christmasStyle, opacityStyle, positionStyle } = useChristmasMessage();
+  const { message, christmasStyle, opacityStyle, positionStyle, widthStyle } = useChristmasMessage();
   const [isChristmasVisible, setChristmasVisible] = useState(true);
 
   const hideChristmasMessage = () => {
@@ -47,7 +47,7 @@ function Showcase({ isActive, toggleMenu }) {
       <div className="overlay"></div>
       <div className="text">
         {isChristmasVisible && (
-            <div style={{ display: christmasStyle, opacity: opacityStyle, position: positionStyle }} className="christmas">
+            <div style={{ display: christmasStyle, opacity: opacityStyle, position: positionStyle, width: widthStyle }} className="christmas">
               <h4>
                 {message}
               </h4>

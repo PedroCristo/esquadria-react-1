@@ -46,6 +46,7 @@ export function useChristmasMessage() {
   const [christmasStyle, setChristmasStyle] = useState('none');
   const [opacityStyle, setOpacityStyle] = useState("0");
   const [positionStyle, setPositionStyle] = useState("absolute");
+  const [widthStyle, setWidthStyle] = useState("50%");
 
   useEffect(() => {
     const dt = new Date();
@@ -55,23 +56,32 @@ export function useChristmasMessage() {
 
     // Check for a specific time of the year and display a message
     let christmasMessage = '';
-    let displayStyle = 'none'; 
+    let displayStyle = 'none';
     let opacityStyle = "0";
     let positionStyle = "absolute";
-    if ((tm === 3 && tda >= 10) || (tm === 0 && tda <= 7)) {
-      christmasMessage = `Desejamos a todos os nossos clientes e colaboradores um Feliz Natal e um próspero Ano Novo de ${currentYear + 1}` ;
+    let widthStyle = "0%";
+    if ((tm === 11 && tda >= 10) || (tm === 0 && tda <= 7)) {
+      christmasMessage = `Desejamos a todos os nossos clientes e colaboradores um Feliz Natal e um próspero Ano Novo de ${currentYear + 1}`;
       // christmasMessage = `Desejamos a todos os nossos clientes e colaboradores um Natal repleto de alegria e um Ano Novo de ${currentYear + 1} repleto de sucesso e prosperidade!`;
       displayStyle = 'block';
-      opacityStyle = "0.7";
-      positionStyle = "relative"
-    } 
-    
+      opacityStyle = "0.8";
+      positionStyle = "relative";
+      widthStyle = "100%";
+    }
+
     setMessage(christmasMessage);
     setChristmasStyle(displayStyle);
     setOpacityStyle(opacityStyle);
-    setPositionStyle(positionStyle)
+    setPositionStyle(positionStyle);
+    setWidthStyle(widthStyle)
 
   }, []);
 
-  return { message, christmasStyle, opacityStyle, positionStyle }; // Return message and display style
+  return {
+    message,
+    christmasStyle,
+    opacityStyle,
+    positionStyle,
+    widthStyle
+  }; 
 }
