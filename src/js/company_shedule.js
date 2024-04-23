@@ -60,7 +60,7 @@ export function useChristmasMessage() {
     if ((tm === 3 && tda >= 10) || (tm === 0 && tda <= 7)) {
       christmasMessage = 'Desejamos a todos os nossos clientes um Feliz Natal e um próspero Ano Novo de ';
       displayStyle = 'block';
-      opacityStyle = "1";
+      opacityStyle = "0.7";
       positionStyle = "relative"
     } 
     
