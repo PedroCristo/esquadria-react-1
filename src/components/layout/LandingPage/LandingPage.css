@@ -402,12 +402,13 @@ video {
 
     #showcase .christmas {
         margin-left: -21px;
-        height: 158px;
-        top: 75px;
+        height: 200px !important;
+        top: 100px;
+        opacity: 1 !important;
     }
 
     #showcase .christmas h4 {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 
 }
@@ -438,6 +439,11 @@ video {
 
     .menu .logo {
         margin-top: 50px;
+    }
+
+    
+    #showcase .christmas h4 {
+        font-size: 1.4em;
     }
 
 }
