@@ -51,6 +51,7 @@ export function useChristmasMessage() {
     const dt = new Date();
     const tm = dt.getMonth();
     const tda = dt.getDate();
+    const currentYear = new Date().getFullYear(); // Get the current year
 
     // Check for a specific time of the year and display a message
     let christmasMessage = '';
@@ -58,7 +59,8 @@ export function useChristmasMessage() {
     let opacityStyle = "0";
     let positionStyle = "absolute";
     if ((tm === 3 && tda >= 10) || (tm === 0 && tda <= 7)) {
-      christmasMessage = 'Desejamos a todos os nossos clientes um Feliz Natal e um próspero Ano Novo de ';
+      christmasMessage = `Desejamos a todos os nossos clientes e colaboradores um Feliz Natal e um próspero Ano Novo de ${currentYear + 1}` ;
+      // christmasMessage = `Desejamos a todos os nossos clientes e colaboradores um Natal repleto de alegria e um Ano Novo de ${currentYear + 1} repleto de sucesso e prosperidade!`;
       displayStyle = 'block';
       opacityStyle = "0.7";
       positionStyle = "relative"

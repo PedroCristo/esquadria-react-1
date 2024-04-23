@@ -6,7 +6,6 @@ import social_linksDB from "../../../data/social_links";
 import { useChristmasMessage } from "../../../js/company_shedule";
 
 function Showcase({ isActive, toggleMenu }) {
-  const currentYear = new Date().getFullYear(); // Get the current year
   const { message, christmasStyle, opacityStyle, positionStyle } = useChristmasMessage();
   const [isChristmasVisible, setChristmasVisible] = useState(true);
 
@@ -50,7 +49,7 @@ function Showcase({ isActive, toggleMenu }) {
         {isChristmasVisible && (
             <div style={{ display: christmasStyle, opacity: opacityStyle, position: positionStyle }} className="christmas">
               <h4>
-                {message} {currentYear + 1}!
+                {message}
               </h4>
               <i className="fa fa-times" onClick={hideChristmasMessage}></i>
           </div>

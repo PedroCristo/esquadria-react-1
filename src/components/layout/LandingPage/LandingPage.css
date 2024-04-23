@@ -108,7 +108,7 @@ video {
     justify-content: center;
     align-items: center;
     top: -50px;
-    opacity: 0.2;
+    opacity: 0.8 !important;
 }
 
 #showcase .christmas h4 {
@@ -402,8 +402,12 @@ video {
 
     #showcase .christmas {
         margin-left: -21px;
-        height: 160px;
+        height: 158px;
         top: 75px;
+    }
+
+    #showcase .christmas h4 {
+        font-size: 1.4em;
     }
 
 }
