@@ -44,6 +44,8 @@ export default function companySchedule() {
 export function useChristmasMessage() {
   const [message, setMessage] = useState('');
   const [christmasStyle, setChristmasStyle] = useState('none');
+  const [opacityStyle, setOpacityStyle] = useState("0");
+  const [positionStyle, setPositionStyle] = useState("absolute");
 
   useEffect(() => {
     const dt = new Date();
@@ -53,15 +55,21 @@ export function useChristmasMessage() {
     // Check for a specific time of the year and display a message
     let christmasMessage = '';
     let displayStyle = 'none'; 
+    let opacityStyle = "0";
+    let positionStyle = "absolute";
     if ((tm === 3 && tda >= 10) || (tm === 0 && tda <= 7)) {
-      christmasMessage = 'Desejamos a todos os nossos clientes um Feliz Natal e um próspero Ano Novo!';
-      displayStyle = 'block'; // 
-    }
+      christmasMessage = 'Desejamos a todos os nossos clientes um Feliz Natal e um próspero Ano Novo de ';
+      displayStyle = 'block';
+      opacityStyle = "1";
+      positionStyle = "relative"
+    } 
     
     setMessage(christmasMessage);
     setChristmasStyle(displayStyle);
+    setOpacityStyle(opacityStyle);
+    setPositionStyle(positionStyle)
 
   }, []);
 
-  return { message, christmasStyle }; // Return both message and display style
+  return { message, christmasStyle, opacityStyle, positionStyle }; // Return message and display style
 }

@@ -1,12 +1,18 @@
 // import "./LandingPage.css";
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { HashLink as Link } from "react-router-hash-link";
 import social_linksDB from "../../../data/social_links";
 import { useChristmasMessage } from "../../../js/company_shedule";
 
 function Showcase({ isActive, toggleMenu }) {
-  const { message, christmasStyle } = useChristmasMessage();
+  const currentYear = new Date().getFullYear(); // Get the current year
+  const { message, christmasStyle, opacityStyle, positionStyle } = useChristmasMessage();
+  const [isChristmasVisible, setChristmasVisible] = useState(true);
+
+  const hideChristmasMessage = () => {
+    setChristmasVisible(false);
+  };
   return (
     <section id="showcase" className={`showcase ${isActive ? "active" : ""}`}>
       <div className="header">
@@ -41,9 +47,14 @@ function Showcase({ isActive, toggleMenu }) {
       ></video>
       <div className="overlay"></div>
       <div className="text">
-        <div style={{ display: christmasStyle }} className="christmas">
-          <h4>{message}</h4>
-        </div>
+        {isChristmasVisible && (
+            <div style={{ display: christmasStyle, opacity: opacityStyle, position: positionStyle }} className="christmas">
+              <h4>
+                {message} {currentYear + 1}!
+              </h4>
+              <i className="fa fa-times" onClick={hideChristmasMessage}></i>
+          </div>
+        )}
         <h2>esquadria</h2>
         <h3>Explorando o mundo das cozinhas</h3>
         <p>

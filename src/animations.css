@@ -7,6 +7,7 @@
   .fade-in-animation {
     animation-name: fadeIn; /* Name of the animation */
     animation-duration: 1s; /* Duration of the animation */
+    animation-delay: 5s;
     animation-fill-mode: forwards; /* Keeps the element at the state of the last keyframe */
   }
   
