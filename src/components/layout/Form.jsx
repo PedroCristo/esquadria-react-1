@@ -19,12 +19,13 @@ function Form() {
   };
   return (
     <form
+      action="https://formsubmit.co/info@esquadria-sa.pt"
       method="POST"
-      action="/página-agradecimento"
       data-netlify="true"
       data-netlify-recaptcha="true"
       onSubmit={handleSubmit}
     >
+      <input type="hidden" name="_next" value="https://esquadria.netlify.app/página-agradecimento"></input>
       <input type="hidden" name="_captcha" value="false" />
       <input type="text" name="name" placeholder="Nome" required />
       <input type="email" name="email" placeholder="E-mail" required />
