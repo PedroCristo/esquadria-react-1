@@ -3,7 +3,8 @@
 const heroSlides = [
     {
       id:1,
-      imgSrc: 'images/desktop/esquadria-cozinhas/esquadria_cozinha_4.jpg',
+      imgSrc: 'images/desktop/esquadria-cozinhas/esquadria_cozinha_10.jpg',
+      imgSrcTablet: 'images/tablet/esquadria-cozinhas/esquadria_cozinha_10.jpg',
       heading: 'Cozinhas Sintra',
       subheading: 'esquadria',
       description:
@@ -11,7 +12,8 @@ const heroSlides = [
     },
     {
       id:2,
-      imgSrc: 'images/desktop/esquadria-cozinhas/esquadria_cozinha_18.jpg',
+      imgSrc: 'images/desktop/esquadria-cozinhas/esquadria_cozinha_11.jpg',
+      imgSrcTablet: 'images/tablet/esquadria-cozinhas/esquadria_cozinha_11.jpg',
       heading: 'Cozinhas Sintra',
       subheading: 'esquadria',
       description:
@@ -19,7 +21,8 @@ const heroSlides = [
     },
     {
       id:3,
-      imgSrc: 'images/desktop/esquadria-cozinhas/esquadria_cozinha_5.jpg',
+      imgSrc: 'images/desktop/esquadria-cozinhas/esquadria_cozinha_12.jpg',
+      imgSrcTablet: 'images/tablet/esquadria-cozinhas/esquadria_cozinha_12.jpg',
       heading: 'Cozinhas Sintra',
       subheading: 'esquadria',
       description:
@@ -28,7 +31,8 @@ const heroSlides = [
     },
     {
       id:4,
-      imgSrc: 'images/desktop/esquadria-cozinhas/esquadria_cozinha_9.jpg',
+      imgSrc: 'images/desktop/esquadria-cozinhas/esquadria_cozinha_13.jpg',
+      imgSrcTablet: 'images/tablet/esquadria-cozinhas/esquadria_cozinha_13.jpg',
       heading: 'Cozinhas Sintra',
       subheading: 'esquadria',
       description:
@@ -37,7 +41,8 @@ const heroSlides = [
     },
     {
       id:5,
-      imgSrc: 'images/desktop/esquadria-cozinhas/esquadria_cozinha_11.jpg',
+      imgSrc: 'images/desktop/esquadria-cozinhas/esquadria_cozinha_14.jpg',
+      imgSrcTablet: 'images/tablet/esquadria-cozinhas/esquadria_cozinha_14.jpg',
       heading: 'Cozinhas Sintra',
       subheading: 'esquadria',
       description:

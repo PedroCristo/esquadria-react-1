@@ -130,6 +130,15 @@
 
 @media only screen and (max-width: 990px) {
 
+    /* General Styles */
+    .show-desktop {
+        display: none !important;
+    }
+
+    .show-tablet {
+        display: block !important; 
+    }
+
     /* SERVICES SECTION */
     #services .user-services {
         transition: 0.3s;
@@ -139,6 +148,7 @@
     #footer p {
         font-size: 9px;
     }
+
 }
 
 @media only screen and (max-width: 800px) {

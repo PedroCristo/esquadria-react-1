@@ -2,7 +2,7 @@ const aboutDB = [
     {
         id: 1,
         title: "Uma História com mais de 50 anos!",
-        imgUrl: "images/desktop/esquadria-cozinhas/esquadria_cozinha_15.jpg",
+        imgUrl: "images/tablet/esquadria-cozinhas/esquadria_cozinha_15.jpg",
         content: [
             {
                 id: 1,

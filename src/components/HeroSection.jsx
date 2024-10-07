@@ -28,8 +28,13 @@ function HeroSection() {
         >
           <div className="overlay"></div>
           <img
-            className={`img-slide ${index === currentIndex ? "active" : ""}`}
+            className={`img-slide show-desktop ${index === currentIndex ? "active" : ""}`}
             src={slide.imgSrc}
+            alt={`Esquadria Imagem ${index + 1}`}
+          />
+          <img
+            className={`img-slide show-tablet ${index === currentIndex ? "active" : ""}`}
+            src={slide.imgSrcTablet}
             alt={`Esquadria Imagem ${index + 1}`}
           />
           <div className="home-content">

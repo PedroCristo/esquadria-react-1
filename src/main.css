@@ -36,10 +36,6 @@ body {
   user-select: none;
 }
 
-body::-webkit-scrollbar {
-  /* display: none; */
-}
-
 .color-dark {
   color: var(--font-dark) !important;
 }
@@ -75,6 +71,14 @@ body::-webkit-scrollbar {
 
 .nav-link {
   cursor: pointer !important;
+}
+
+.show-tablet {
+  display: none;
+}
+
+.show-desktop {
+  display: block;
 }
 
 /* HEADER */
@@ -400,7 +404,7 @@ body::-webkit-scrollbar {
 /* BANNER SECTION */
 #banner {
   background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
-    url(../images/desktop/esquadria-cozinhas/esquadria_cozinha_4.jpg);
+    url(../images/desktop/esquadria-cozinhas/esquadria_cozinha_8.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
