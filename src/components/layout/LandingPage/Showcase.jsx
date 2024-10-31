@@ -32,14 +32,14 @@ function Showcase({ isActive, toggleMenu }) {
       </div>
       <video
         className="video_desktop"
-        src="videos/desktop/esquadria_video_longo_desktop.mp4"
+        src="videos/desktop/esquadria_video_original_desktop_1.mp4"
         muted
         loop
         autoPlay
       ></video>
       <video
         className="video_mobile"
-        src="videos/mobile/esquadria_video_longo_mobile.mp4"
+        src="videos/desktop/esquadria_video_original_desktop_1.mp4"
         muted
         loop
         autoPlay
