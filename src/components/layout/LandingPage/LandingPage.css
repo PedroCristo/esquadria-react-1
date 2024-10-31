@@ -73,7 +73,7 @@ video {
     /* background: var(--overlay-color); */
     background: var(--overlay-black);
     /* mix-blend-mode: overlay; */
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 /* Text Styles */
